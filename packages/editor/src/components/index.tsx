@@ -26,6 +26,7 @@ import {
   Designer,
   DesignerKeyboard,
   EditorRenderMode,
+  Mindmap,
 } from '@wisemapping/mindplot';
 
 import I18nMsg from '../classes/i18n-msg';
@@ -61,6 +62,7 @@ type EditorProps = {
   onLoad?: (designer: Designer) => void;
   theme?: Theme;
   accountConfiguration?: React.ReactElement;
+  onChange?: (mindmap: Mindmap) => void;
 };
 
 const Editor = ({
@@ -69,6 +71,7 @@ const Editor = ({
   persistenceManager,
   onAction,
   accountConfiguration,
+  onChange,
 }: EditorProps): ReactElement => {
   const [model, setModel] = useState<Model | undefined>();
   const mindplotRef = useRef(null);
@@ -94,6 +97,13 @@ const Editor = ({
           window.newrelic?.noticeError(e);
         });
       setModel(model);
+      model.getDesigner().addEvent('modelUpdate', () => {
+        try {
+          onChange(designer.getMindmap());
+        } catch (e) {
+          // nothing to do
+        }
+      });
     }
   }, [mindplotRef]);
 

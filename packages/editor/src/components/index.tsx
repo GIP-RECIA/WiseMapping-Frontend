@@ -52,6 +52,7 @@ export type EditorOptions = {
   locale: string;
   zoom?: number;
   enableKeyboardEvents: boolean;
+  hideAppBar?: boolean;
 };
 
 type EditorProps = {
@@ -120,13 +121,15 @@ const Editor = ({
   const msg = I18nMsg.loadLocaleData(locale);
   return (
     <IntlProvider locale={locale} messages={msg}>
-      <AppBar
-        model={model}
-        mapInfo={mapInfo}
-        capability={capability}
-        onAction={onAction}
-        accountConfig={accountConfiguration}
-      />
+      {!options.hideAppBar && (
+        <AppBar
+          model={model}
+          mapInfo={mapInfo}
+          capability={capability}
+          onAction={onAction}
+          accountConfig={accountConfiguration}
+        />
+      )}
 
       <Popover
         id="popover"

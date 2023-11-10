@@ -672,7 +672,7 @@ export const MapsList = (props: MapsListProps): React.ReactElement => {
                         </TableCell>
 
                         <TableCell padding="checkbox" css={classes.bodyCell}>
-                          <Tooltip
+                          {/* <Tooltip
                             arrow={true}
                             title={intl.formatMessage({
                               id: 'maps.tooltip-starred',
@@ -687,7 +687,7 @@ export const MapsList = (props: MapsListProps): React.ReactElement => {
                                 }}
                               />
                             </IconButton>
-                          </Tooltip>
+                          </Tooltip> */}
                         </TableCell>
 
                         <TableCell css={classes.bodyCell}>
@@ -741,7 +741,7 @@ export const MapsList = (props: MapsListProps): React.ReactElement => {
                         </TableCell>
 
                         <TableCell css={classes.bodyCell}>
-                          <Tooltip
+                          {/* <Tooltip
                             arrow={true}
                             title={intl.formatMessage({
                               id: 'map.more-actions',
@@ -755,7 +755,7 @@ export const MapsList = (props: MapsListProps): React.ReactElement => {
                             >
                               <MoreHorizIcon color="action" />
                             </IconButton>
-                          </Tooltip>
+                          </Tooltip> */}
                         </TableCell>
                       </TableRow>
                     );

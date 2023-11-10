@@ -36,7 +36,7 @@ export const mobileAppbarButton = {
   },
 };
 export function useStyles(drawerOpen) {
-  const drawerWidth = drawerOpen ? 300 : 66;
+  const drawerWidth = 0; // drawerOpen ? 300 : 66;
   const theme = useTheme();
   const smMediaQuery = theme.breakpoints.down('sm');
   return useClasses({

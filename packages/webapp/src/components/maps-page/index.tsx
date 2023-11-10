@@ -232,7 +232,7 @@ const MapsPage = (): ReactElement => {
           elevation={0}
         >
           <Toolbar>
-            <IconButton
+            {/* <IconButton
               aria-label="open drawer"
               edge="start"
               onClick={handleMobileDrawerToggle}
@@ -250,7 +250,7 @@ const MapsPage = (): ReactElement => {
             >
               {!desktopDrawerOpen && <ArrowRight />}
               {desktopDrawerOpen && <ArrowLeft />}
-            </IconButton>
+            </IconButton> */}
             <Tooltip
               arrow={true}
               title={intl.formatMessage({
@@ -304,14 +304,14 @@ const MapsPage = (): ReactElement => {
               fromEditor
             />
 
-            <div css={classes.rightButtonGroup as Interpolation<Theme>}>
+            {/* <div css={classes.rightButtonGroup as Interpolation<Theme>}>
               <LanguageMenu />
               <HelpMenu />
               <AccountMenu />
-            </div>
+            </div> */}
           </Toolbar>
         </AppBar>
-        <Drawer
+        {/* <Drawer
           container={container}
           variant={'temporary'}
           open={mobileDrawerOpen}
@@ -332,7 +332,7 @@ const MapsPage = (): ReactElement => {
           ]}
         >
           {drawerItemsList}
-        </Drawer>
+        </Drawer> */}
         <main css={classes.content}>
           <div css={classes.toolbar} />
           <MapsList filter={filter} />

@@ -170,87 +170,87 @@ const AppBar = ({
       visible: !capability.isHidden('save'),
       disabled: () => !model?.isMapLoadded(),
     },
-    {
-      icon: <RestoreOutlinedIcon />,
-      onClick: () => onAction('history'),
-      tooltip: intl.formatMessage({
-        id: 'appbar.tooltip-history',
-        defaultMessage: 'Changes History',
-      }),
-      visible: !capability.isHidden('history'),
-    },
+    // {
+    //   icon: <RestoreOutlinedIcon />,
+    //   onClick: () => onAction('history'),
+    //   tooltip: intl.formatMessage({
+    //     id: 'appbar.tooltip-history',
+    //     defaultMessage: 'Changes History',
+    //   }),
+    //   visible: !capability.isHidden('history'),
+    // },
     appBarDivisor,
-    {
-      render: () => (
-        <Tooltip
-          title={intl.formatMessage({ id: 'appbar.tooltip-starred', defaultMessage: 'Starred' })}
-        >
-          <IconButton size="small" onClick={handleStarredOnClick}>
-            <StarRateRoundedIcon
-              color="action"
-              style={isStarred ? StarredOnStyle : StarredOffStyle}
-            />
-          </IconButton>
-        </Tooltip>
-      ),
-      visible: !capability.isHidden('starred'),
-      disabled: () => isStarred !== undefined,
-    },
+    // {
+    //   render: () => (
+    //     <Tooltip
+    //       title={intl.formatMessage({ id: 'appbar.tooltip-starred', defaultMessage: 'Starred' })}
+    //     >
+    //       <IconButton size="small" onClick={handleStarredOnClick}>
+    //         <StarRateRoundedIcon
+    //           color="action"
+    //           style={isStarred ? StarredOnStyle : StarredOffStyle}
+    //         />
+    //       </IconButton>
+    //     </Tooltip>
+    //   ),
+    //   visible: !capability.isHidden('starred'),
+    //   disabled: () => isStarred !== undefined,
+    // },
     {
       icon: <FileDownloadOutlinedIcon />,
       onClick: () => onAction('export'),
       tooltip: intl.formatMessage({ id: 'appbar.tooltip-export', defaultMessage: 'Export' }),
       visible: !capability.isHidden('export'),
     },
-    {
-      icon: <PrintOutlinedIcon />,
-      onClick: () => onAction('print'),
-      tooltip: intl.formatMessage({ id: 'appbar.tooltip-print', defaultMessage: 'Print' }),
-      visible: !capability.isHidden('print'),
-    },
-    {
-      icon: <HelpOutlineOutlinedIcon />,
-      onClick: () => onAction('info'),
-      tooltip: intl.formatMessage({ id: 'appbar.tooltip-info', defaultMessage: 'Information' }),
-      visible: !capability.isHidden('info'),
-    },
-    {
-      icon: <CloudUploadOutlinedIcon />,
-      onClick: () => onAction('publish'),
-      tooltip: intl.formatMessage({ id: 'appbar.tooltip-publish', defaultMessage: 'Publish' }),
-      visible: !capability.isHidden('publish'),
-    },
-    {
-      render: () => (
-        <Tooltip
-          title={intl.formatMessage({
-            id: 'appbar.tooltip-shared',
-            defaultMessage: 'Share for Collaboration',
-          })}
-        >
-          <Button variant="contained" onClick={() => onAction('share')}>
-            {intl.formatMessage({ id: 'appbar.shared-button', defaultMessage: 'Share' })}
-          </Button>
-        </Tooltip>
-      ),
-      visible: !capability.isHidden('share'),
-    },
-    {
-      render: () => accountConfig,
-      visible: !capability.isHidden('account'),
-    },
-    {
-      render: () => (
-        <Tooltip
-          title={intl.formatMessage({ id: 'appbar.tooltip-signup', defaultMessage: 'Sign Up' })}
-        >
-          <Button variant="contained" onClick={() => (window.location.href = '/c/registration')}>
-            {intl.formatMessage({ id: 'appbar.button-signup', defaultMessage: 'Sign Up' })}
-          </Button>
-        </Tooltip>
-      ),
-      visible: !capability.isHidden('sign-up'),
-    },
+    // {
+    //   icon: <PrintOutlinedIcon />,
+    //   onClick: () => onAction('print'),
+    //   tooltip: intl.formatMessage({ id: 'appbar.tooltip-print', defaultMessage: 'Print' }),
+    //   visible: !capability.isHidden('print'),
+    // },
+    // {
+    //   icon: <HelpOutlineOutlinedIcon />,
+    //   onClick: () => onAction('info'),
+    //   tooltip: intl.formatMessage({ id: 'appbar.tooltip-info', defaultMessage: 'Information' }),
+    //   visible: !capability.isHidden('info'),
+    // },
+    // {
+    //   icon: <CloudUploadOutlinedIcon />,
+    //   onClick: () => onAction('publish'),
+    //   tooltip: intl.formatMessage({ id: 'appbar.tooltip-publish', defaultMessage: 'Publish' }),
+    //   visible: !capability.isHidden('publish'),
+    // },
+    // {
+    //   render: () => (
+    //     <Tooltip
+    //       title={intl.formatMessage({
+    //         id: 'appbar.tooltip-shared',
+    //         defaultMessage: 'Share for Collaboration',
+    //       })}
+    //     >
+    //       <Button variant="contained" onClick={() => onAction('share')}>
+    //         {intl.formatMessage({ id: 'appbar.shared-button', defaultMessage: 'Share' })}
+    //       </Button>
+    //     </Tooltip>
+    //   ),
+    //   visible: !capability.isHidden('share'),
+    // },
+    // {
+    //   render: () => accountConfig,
+    //   visible: !capability.isHidden('account'),
+    // },
+    // {
+    //   render: () => (
+    //     <Tooltip
+    //       title={intl.formatMessage({ id: 'appbar.tooltip-signup', defaultMessage: 'Sign Up' })}
+    //     >
+    //       <Button variant="contained" onClick={() => (window.location.href = '/c/registration')}>
+    //         {intl.formatMessage({ id: 'appbar.button-signup', defaultMessage: 'Sign Up' })}
+    //       </Button>
+    //     </Tooltip>
+    //   ),
+    //   visible: !capability.isHidden('sign-up'),
+    // },
   ];
 
   return (

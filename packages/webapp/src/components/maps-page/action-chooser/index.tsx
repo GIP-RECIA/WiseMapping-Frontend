@@ -61,7 +61,7 @@ const ActionChooser = (props: ActionProps): React.ReactElement => {
       onClose={handleOnClose(undefined)}
       elevation={1}
     >
-      <MenuItem onClick={handleOnClose('open')} style={{ width: '220px' }}>
+      <MenuItem onClick={handleOnClose('open')}>
         <ListItemIcon>
           <DescriptionOutlinedIcon />
         </ListItemIcon>
@@ -108,30 +108,30 @@ const ActionChooser = (props: ActionProps): React.ReactElement => {
         <FormattedMessage id="action.export" defaultMessage="Export" />
       </MenuItem>
 
-      <MenuItem onClick={handleOnClose('print')}>
+      {/* <MenuItem onClick={handleOnClose('print')}>
         <ListItemIcon>
           <PrintOutlinedIcon />
         </ListItemIcon>
         <FormattedMessage id="action.print" defaultMessage="Print" />
-      </MenuItem>
+      </MenuItem> */}
 
-      {role == 'owner' && (
+      {/* {role == 'owner' && (
         <MenuItem onClick={handleOnClose('publish')}>
           <ListItemIcon>
             <PublicOutlinedIcon />
           </ListItemIcon>
           <FormattedMessage id="action.publish" defaultMessage="Publish" />
         </MenuItem>
-      )}
+      )} */}
 
-      {role == 'owner' && (
+      {/* {role == 'owner' && (
         <MenuItem onClick={handleOnClose('share')}>
           <ListItemIcon>
             <ShareOutlinedIcon />
           </ListItemIcon>
           <FormattedMessage id="action.share" defaultMessage="Share" />
         </MenuItem>
-      )}
+      )} */}
       <Divider />
 
       <MenuItem onClick={handleOnClose('info')}>
@@ -141,14 +141,14 @@ const ActionChooser = (props: ActionProps): React.ReactElement => {
         <FormattedMessage id="action.info" defaultMessage="Info" />
       </MenuItem>
 
-      {role != 'viewer' && (
+      {/* {role != 'viewer' && (
         <MenuItem onClick={handleOnClose('history')}>
           <ListItemIcon>
             <HistoryOutlined />
           </ListItemIcon>
           <FormattedMessage id="action.history" defaultMessage="History" />
         </MenuItem>
-      )}
+      )} */}
     </Menu>
   );
 };

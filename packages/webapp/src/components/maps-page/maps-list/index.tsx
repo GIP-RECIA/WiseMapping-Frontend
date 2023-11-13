@@ -546,26 +546,26 @@ export const MapsList = (props: MapsListProps): React.ReactElement => {
                       >
                         <CardHeader
                           css={classes.cardHeader}
-                          avatar={
-                            <Tooltip
-                              arrow={true}
-                              title={intl.formatMessage({
-                                id: 'maps.tooltip-starred',
-                                defaultMessage: 'Starred',
-                              })}
-                            >
-                              <div className="hola" onClick={(e) => e.stopPropagation()}>
-                                <IconButton size="small" onClick={(e) => handleStarred(e, row.id)}>
-                                  <StarRateRoundedIcon
-                                    color="action"
-                                    style={{
-                                      color: row.starred ? 'yellow' : 'gray',
-                                    }}
-                                  />
-                                </IconButton>
-                              </div>
-                            </Tooltip>
-                          }
+                          // avatar={
+                          //   <Tooltip
+                          //     arrow={true}
+                          //     title={intl.formatMessage({
+                          //       id: 'maps.tooltip-starred',
+                          //       defaultMessage: 'Starred',
+                          //     })}
+                          //   >
+                          //     <div className="hola" onClick={(e) => e.stopPropagation()}>
+                          //       <IconButton size="small" onClick={(e) => handleStarred(e, row.id)}>
+                          //         <StarRateRoundedIcon
+                          //           color="action"
+                          //           style={{
+                          //             color: row.starred ? 'yellow' : 'gray',
+                          //           }}
+                          //         />
+                          //       </IconButton>
+                          //     </div>
+                          //   </Tooltip>
+                          // }
                           action={
                             <Tooltip
                               arrow={true}

@@ -62,7 +62,7 @@
   "action.delete-description": [
     {
       "type": 0,
-      "value": "La carte mentale supprimée ne peut pas être récupérée. Voulez-vous continuer ?."
+      "value": "La carte mentale supprimée ne peut pas être récupérée. Voulez-vous continuer ?"
     }
   ],
   "action.delete-title": [
@@ -80,7 +80,7 @@
   "action.export": [
     {
       "type": 0,
-      "value": "Exportation"
+      "value": "Exporter"
     }
   ],
   "action.history": [
@@ -110,7 +110,7 @@
   "action.info": [
     {
       "type": 0,
-      "value": "Info"
+      "value": "Informations"
     }
   ],
   "action.label": [
@@ -128,7 +128,7 @@
   "action.open": [
     {
       "type": 0,
-      "value": "Ouvert"
+      "value": "Ouvrir"
     }
   ],
   "action.print": [
@@ -432,7 +432,7 @@
   "header.haveaccount": [
     {
       "type": 0,
-      "value": "Vous avez déjà un compte?"
+      "value": "Vous avez déjà un compte ?"
     }
   ],
   "help.support": [
@@ -456,7 +456,7 @@
   "import.description": [
     {
       "type": 0,
-      "value": "Sie können WiseMapping- oder Freemind-Karten in Ihre Kartenliste importieren. Selectionnez le fichier que vous souhaitez Importeur."
+      "value": "Selectionnez le fichier que vous souhaitez importer."
     }
   ],
   "import.error-file": [
@@ -580,7 +580,7 @@
   "label.delete-description": [
     {
       "type": 0,
-      "value": "sera supprimé, y compris ses associations à toutes les cartes existantes. Voulez-vous continuer?"
+      "value": "sera supprimé, y compris ses associations à toutes les cartes existantes. Voulez-vous continuer ?"
     }
   ],
   "label.delete-title": [
@@ -838,7 +838,7 @@
   "maps.tooltip-open": [
     {
       "type": 0,
-      "value": "Ouvert pour l'édition"
+      "value": "Ouvrir pour l'édition"
     }
   ],
   "maps.tooltip-starred": [

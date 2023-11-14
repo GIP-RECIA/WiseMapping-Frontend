@@ -30,7 +30,7 @@
         "defaultMessage": "Supprimer"
     },
     "action.delete-description": {
-        "defaultMessage": "La carte mentale supprimée ne peut pas être récupérée. Voulez-vous continuer ?."
+        "defaultMessage": "La carte mentale supprimée ne peut pas être récupérée. Voulez-vous continuer ?"
     },
     "action.delete-title": {
         "defaultMessage": "Supprimer"
@@ -39,7 +39,7 @@
         "defaultMessage": "Dupliquer"
     },
     "action.export": {
-        "defaultMessage": "Exportation"
+        "defaultMessage": "Exporter"
     },
     "action.history": {
         "defaultMessage": "Histoire"
@@ -54,7 +54,7 @@
         "defaultMessage": "Importer"
     },
     "action.info": {
-        "defaultMessage": "Info"
+        "defaultMessage": "Informations"
     },
     "action.label": {
         "defaultMessage": "Ajouter une étiquette"
@@ -63,7 +63,7 @@
         "defaultMessage": "Nouvelle carte"
     },
     "action.open": {
-        "defaultMessage": "Ouvert"
+        "defaultMessage": "Ouvrir"
     },
     "action.print": {
         "defaultMessage": "Imprimer"
@@ -195,7 +195,7 @@
         "defaultMessage": "Vous n'avez pas de compte ?"
     },
     "header.haveaccount": {
-        "defaultMessage": "Vous avez déjà un compte?"
+        "defaultMessage": "Vous avez déjà un compte ?"
     },
     "help.support": {
         "defaultMessage": "Soutien"
@@ -207,7 +207,7 @@
         "defaultMessage": "Créer"
     },
     "import.description": {
-        "defaultMessage": "Sie können WiseMapping- oder Freemind-Karten in Ihre Kartenliste importieren. Selectionnez le fichier que vous souhaitez Importeur."
+        "defaultMessage": "Selectionnez le fichier que vous souhaitez importer."
     },
     "import.title": {
         "defaultMessage": "Importer une carte mentale existante"
@@ -228,7 +228,7 @@
         "defaultMessage": "Créateur"
     },
     "info.description": {
-        "defaultMessage": "La description"
+        "defaultMessage": "Description"
     },
     "info.description-msg": {
         "defaultMessage": "En publiant la carte, vous la rendez visible par tous sur Internet."
@@ -361,7 +361,7 @@
         "defaultMessage": "Chercher ..."
     },
     "maps.tooltip-open": {
-        "defaultMessage": "Ouvert pour l'édition"
+        "defaultMessage": "Ouvrir pour l'édition"
     },
     "maps.tooltip-starred": {
         "defaultMessage": "Favoris"
@@ -496,7 +496,7 @@
         "defaultMessage": "Changer la couleur de l'étiquette"
     },
     "label.delete-description": {
-        "defaultMessage": "sera supprimé, y compris ses associations à toutes les cartes existantes. Voulez-vous continuer?"
+        "defaultMessage": "sera supprimé, y compris ses associations à toutes les cartes existantes. Voulez-vous continuer ?"
     },
     "label.delete-title": {
         "defaultMessage": "Confirmer la suppression de l'étiquette"

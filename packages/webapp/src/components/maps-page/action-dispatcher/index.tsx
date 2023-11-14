@@ -14,6 +14,7 @@ import ExportDialog from './export-dialog';
 import ShareDialog from './share-dialog';
 import LabelDialog from './label-dialog';
 import ReactGA from 'react-ga4';
+import { URI } from 'config';
 
 export type BasicMapInfo = {
   name: string;
@@ -49,11 +50,11 @@ const ActionDispatcher = ({
 
   switch (action) {
     case 'open':
-      window.location.href = `/c/maps/${mapsId}/edit`;
+      window.location.href = `${URI}/c/maps/${mapsId}/edit`;
       handleOnClose(true);
       break;
     case 'print':
-      window.open(`/c/maps/${mapsId}/print`, 'print');
+      window.open(`${URI}/c/maps/${mapsId}/print`, 'print');
       handleOnClose(true);
       break;
   }

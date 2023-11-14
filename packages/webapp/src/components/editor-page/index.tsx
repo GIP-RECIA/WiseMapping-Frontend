@@ -43,19 +43,20 @@ import Client from '../../classes/client';
 import AppConfig from '../../classes/app-config';
 import exampleMap from '../../classes/client/mock-client/example-map.wxml';
 import ClientHealthSentinel from '../common/client-health-sentinel';
+import { URI } from 'config';
 
 const buildPersistenceManagerForEditor = (mode: string): PersistenceManager => {
   let persistenceManager: PersistenceManager;
   if (AppConfig.isRestClient()) {
     if (mode === 'edition-owner' || mode === 'edition-editor') {
       persistenceManager = new RESTPersistenceManager({
-        documentUrl: '/c/restful/maps/{id}/document',
-        revertUrl: '/c/restful/maps/{id}/history/latest',
-        lockUrl: '/c/restful/maps/{id}/lock',
+        documentUrl: `${URI}/c/restful/maps/{id}/document`,
+        revertUrl: `${URI}/c/restful/maps/{id}/history/latest`,
+        lockUrl: `${URI}/c/restful/maps/{id}/lock`,
       });
     } else {
       persistenceManager = new LocalStorageManager(
-        `/c/restful/maps/{id}/${
+        `${URI}/c/restful/maps/{id}/${
           globalThis.historyId ? `${globalThis.historyId}/` : ''
         }document/xml${mode === 'showcase' ? '-pub' : ''}`,
         true,

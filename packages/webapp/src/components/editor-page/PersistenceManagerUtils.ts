@@ -1,10 +1,11 @@
 import AppConfig from '../../classes/app-config';
 import { LocalStorageManager, Mindmap, XMLSerializerFactory } from '@wisemapping/editor';
+import { URI } from 'config';
 
 export const fetchMindmap = async (mapId: number): Promise<Mindmap> => {
   let mindmap: Mindmap;
   if (AppConfig.isRestClient()) {
-    const persistence = new LocalStorageManager(`/c/restful/maps/{id}/document/xml`, true);
+    const persistence = new LocalStorageManager(`${URI}/c/restful/maps/{id}/document/xml`, true);
     mindmap = await persistence.load(String(mapId));
   } else {
     const parser = new DOMParser();

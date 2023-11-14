@@ -36,6 +36,7 @@ import { ThemeProvider } from '@emotion/react';
 import RegistrationCallbackPage from './components/registration-callback';
 import ErrorPage from './components/error-page';
 import { useStyles } from './style';
+import { URI } from 'config';
 
 const EditorPage = React.lazy(() => import('./components/editor-page'));
 const MapsPage = React.lazy(() => import('./components/maps-page'));
@@ -128,7 +129,7 @@ const App = (): ReactElement => {
                   </header>
                   <main css={classes.main}>
                     {!overwriteView ? (
-                      <Router>
+                      <Router basename={URI}>
                         <Routes>
                           <Route path="/" element={<Redirect to="/c/login" />} />
                           <Route path="/c/login" element={<LoginPage />} />

@@ -41,6 +41,7 @@ import IconButton from '@mui/material/IconButton';
 import { ToolbarActionType } from '../toolbar/ToolbarActionType';
 import MapInfo from '../../classes/model/map-info';
 import { useIntl } from 'react-intl';
+import { URI } from 'config';
 
 interface AppBarProps {
   model: Editor | undefined;
@@ -100,7 +101,7 @@ const AppBar = ({
         id: 'appbar.back-to-map-list',
         defaultMessage: 'Back to maps list',
       }),
-      onClick: () => (window.location.href = '/c/maps/'),
+      onClick: () => (window.location.href = `${URI}/c/maps/`),
     },
     {
       render: () => <img src={LogoTextBlackSvg} aria-label="WiseMappping" />,

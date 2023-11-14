@@ -17,6 +17,7 @@ import TableBody from '@mui/material/TableBody';
 import Tooltip from '@mui/material/Tooltip';
 import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
+import { URI } from 'config';
 
 const HistoryDialog = ({ mapId, onClose }: SimpleDialogProps): React.ReactElement => {
   const intl = useIntl();
@@ -94,7 +95,7 @@ const HistoryDialog = ({ mapId, onClose }: SimpleDialogProps): React.ReactElemen
                       </Tooltip>
                     </TableCell>
                     <TableCell align="left">
-                      <Link href={`/c/maps/${mapId}/${row.id}/view`} target="history">
+                      <Link href={`${URI}/c/maps/${mapId}/${row.id}/view`} target="history">
                         <FormattedMessage id="maps.view" defaultMessage="View" />
                       </Link>
                     </TableCell>

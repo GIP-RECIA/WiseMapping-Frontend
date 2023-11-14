@@ -8,6 +8,7 @@ import Client, { BasicMapInfo, ErrorInfo } from '../../../../classes/client';
 import { activeInstance } from '../../../../redux/clientSlice';
 import Input from '../../../form/input';
 import BaseDialog from '../base-dialog';
+import { URI } from 'config';
 
 export type CreateModel = {
   title: string;
@@ -31,7 +32,7 @@ const CreateDialog = ({ onClose }: CreateProps): React.ReactElement => {
     },
     {
       onSuccess: (mapId: number) => {
-        window.location.href = `/c/maps/${mapId}/edit`;
+        window.location.href = `${URI}/c/maps/${mapId}/edit`;
       },
       onError: (error) => {
         setError(error);

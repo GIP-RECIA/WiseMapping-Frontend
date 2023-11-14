@@ -46,6 +46,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import CardHeader from '@mui/material/CardHeader';
+import { URI } from 'config';
 
 dayjs.extend(LocalizedFormat);
 dayjs.extend(relativeTime);
@@ -540,7 +541,7 @@ export const MapsList = (props: MapsListProps): React.ReactElement => {
                   return (
                     <Card key={row.id} css={{ maxWidth: '94vw', margin: '3vw' }}>
                       <Link
-                        href={`/c/maps/${row.id}/edit`}
+                        href={`${URI}/c/maps/${row.id}/edit`}
                         underline="none"
                         onClick={(e) => e.stopPropagation()}
                       >
@@ -700,7 +701,7 @@ export const MapsList = (props: MapsListProps): React.ReactElement => {
                             placement="bottom-start"
                           >
                             <Link
-                              href={`/c/maps/${row.id}/edit`}
+                              href={`${URI}/c/maps/${row.id}/edit`}
                               color="textPrimary"
                               underline="always"
                               onClick={(e) => e.stopPropagation()}

@@ -9,6 +9,7 @@ import { activeInstance, useFetchMapById } from '../../../../redux/clientSlice';
 import Input from '../../../form/input';
 import { SimpleDialogProps } from '..';
 import BaseDialog from '../base-dialog';
+import { URI } from 'config';
 
 export type DuplicateModel = {
   id: number;
@@ -31,7 +32,7 @@ const DuplicateDialog = ({ mapId, onClose }: SimpleDialogProps): React.ReactElem
     },
     {
       onSuccess: (mapId) => {
-        window.location.href = `/c/maps/${mapId}/edit`;
+        window.location.href = `${URI}/c/maps/${mapId}/edit`;
       },
       onError: (error) => {
         setError(error);

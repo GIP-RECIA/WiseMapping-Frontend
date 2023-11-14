@@ -152,6 +152,8 @@ const Editor = ({
         mode={options.mode}
         locale={options.locale}
         zoom={options.zoom}
+        // @ts-ignore
+        class="mindplot"
       />
 
       <Notifier id="headerNotifier" />

@@ -261,7 +261,7 @@ export const MapsList = (props: MapsListProps): React.ReactElement => {
   const [searchCondition, setSearchCondition] = React.useState<string>('');
 
   const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [rowsPerPage, setRowsPerPage] = React.useState(20);
   const client: Client = useSelector(activeInstance);
   const intl = useIntl();
   const queryClient = useQueryClient();

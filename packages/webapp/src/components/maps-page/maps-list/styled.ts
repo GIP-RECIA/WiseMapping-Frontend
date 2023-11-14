@@ -68,7 +68,6 @@ export const useStyles = () => {
     },
     toolbarActions: {
       flexGrow: 1,
-      paddingLeft: '23px;',
     },
     search: {
       borderRadius: 9,

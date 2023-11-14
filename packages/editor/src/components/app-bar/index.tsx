@@ -264,6 +264,7 @@ const AppBar = ({
           marginX: '1rem',
         },
       }}
+      style={{ position: 'unset' }}
     >
       <MaterialToolbar>
         {config.map((c, i) => {

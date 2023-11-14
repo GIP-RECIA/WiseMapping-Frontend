@@ -252,6 +252,7 @@ const Toolbar = (props: {
       }}
       role="menu"
       aria-orientation={position.vertical ? 'vertical' : 'horizontal'}
+      style={{ zIndex: 4 }}
     >
       {props.configurations.map((c, i) => {
         return (

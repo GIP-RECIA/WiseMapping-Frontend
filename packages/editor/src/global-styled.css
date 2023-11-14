@@ -18,3 +18,8 @@ body {
   font-size: 13px;
   max-width: none;
 }
+
+.mindplot {
+  display: flex;
+  height: calc(100% - 64px);
+}

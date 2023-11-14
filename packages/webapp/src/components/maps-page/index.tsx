@@ -227,6 +227,7 @@ const MapsPage = (): ReactElement => {
       <div css={classes.root}>
         <AppBar
           position="fixed"
+          // @ts-ignore
           css={[classes.appBar, classes.appBarShift]}
           variant="outlined"
           elevation={0}
@@ -333,8 +334,7 @@ const MapsPage = (): ReactElement => {
         >
           {drawerItemsList}
         </Drawer> */}
-        <main css={classes.content}>
-          <div css={classes.toolbar} />
+        <main>
           <MapsList filter={filter} />
         </main>
       </div>

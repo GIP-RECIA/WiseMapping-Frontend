@@ -41,10 +41,12 @@ export function useStyles(drawerOpen) {
   const smMediaQuery = theme.breakpoints.down('sm');
   return useClasses({
     root: {
-      display: 'flex',
+      height: '100%',
+      'overflow-y': 'scroll',
     },
     appBar: {
       background: '#ffffff',
+      position: 'unset',
     },
     appBarShift: {
       marginLeft: drawerWidth,
@@ -118,10 +120,6 @@ export function useStyles(drawerOpen) {
       display: 'flex',
       justifyContent: 'flex-end',
       minHeight: '44px',
-    },
-    content: {
-      flexGrow: 1,
-      padding: '24px 0px',
     },
   });
 }

@@ -16,6 +16,7 @@
  *   limitations under the License.
  */
 import jquery from 'jquery';
+import { URI } from 'config';
 import PersistenceManager from './components/PersistenceManager';
 import LocalStorageManager from './components/LocalStorageManager';
 import MindplotWebComponent from './components/MindplotWebComponent';
@@ -29,7 +30,7 @@ customElements.define('mindplot-component', MindplotWebComponent);
 // Configure designer options ...
 const historyId = globalThis.historyId ? `${globalThis.historyId}/` : '';
 const persistence: PersistenceManager = new LocalStorageManager(
-  `/c/restful/maps/{id}/${historyId}document/xml${!globalThis.isAuth ? '-pub' : ''}`,
+  `${URI}/c/restful/maps/{id}/${historyId}document/xml${!globalThis.isAuth ? '-pub' : ''}`,
   true,
 );
 

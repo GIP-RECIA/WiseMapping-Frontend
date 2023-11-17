@@ -115,14 +115,14 @@ const ActionChooser = (props: ActionProps): React.ReactElement => {
         <FormattedMessage id="action.print" defaultMessage="Print" />
       </MenuItem> */}
 
-      {/* {role == 'owner' && (
+      {role == 'owner' && (
         <MenuItem onClick={handleOnClose('publish')}>
           <ListItemIcon>
             <PublicOutlinedIcon />
           </ListItemIcon>
           <FormattedMessage id="action.publish" defaultMessage="Publish" />
         </MenuItem>
-      )} */}
+      )}
 
       {/* {role == 'owner' && (
         <MenuItem onClick={handleOnClose('share')}>

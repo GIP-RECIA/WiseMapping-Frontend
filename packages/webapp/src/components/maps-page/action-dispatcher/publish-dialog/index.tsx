@@ -96,7 +96,7 @@ const PublishDialog = ({ mapId, onClose }: SimpleDialogProps): React.ReactElemen
 
         <div style={!model ? { visibility: 'hidden' } : {}}>
           <TabContext value={activeTab}>
-            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+            {/* <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
               <TabList onChange={handleTabChange}>
                 <Tab
                   label={intl.formatMessage({
@@ -113,8 +113,8 @@ const PublishDialog = ({ mapId, onClose }: SimpleDialogProps): React.ReactElemen
                   value="2"
                 />
               </TabList>
-            </Box>
-            <TabPanel value="2">
+            </Box> */}
+            {/* <TabPanel value="2">
               <Typography variant="subtitle2">
                 <FormattedMessage
                   id="publish.embedded-msg"
@@ -128,7 +128,7 @@ const PublishDialog = ({ mapId, onClose }: SimpleDialogProps): React.ReactElemen
                 maxRows={6}
                 defaultValue={`<iframe style="width:600px;height:400px;border:1px solid black" src="${baseUrl}/c/maps/${mapId}/embed?zoom=1.0"></iframe>`}
               />
-            </TabPanel>
+            </TabPanel> */}
             <TabPanel value="1">
               <Typography variant="subtitle2">
                 <FormattedMessage

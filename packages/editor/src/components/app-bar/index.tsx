@@ -215,12 +215,12 @@ const AppBar = ({
     //   tooltip: intl.formatMessage({ id: 'appbar.tooltip-info', defaultMessage: 'Information' }),
     //   visible: !capability.isHidden('info'),
     // },
-    // {
-    //   icon: <CloudUploadOutlinedIcon />,
-    //   onClick: () => onAction('publish'),
-    //   tooltip: intl.formatMessage({ id: 'appbar.tooltip-publish', defaultMessage: 'Publish' }),
-    //   visible: !capability.isHidden('publish'),
-    // },
+    {
+      icon: <CloudUploadOutlinedIcon />,
+      onClick: () => onAction('publish'),
+      tooltip: intl.formatMessage({ id: 'appbar.tooltip-publish', defaultMessage: 'Publish' }),
+      visible: !capability.isHidden('publish'),
+    },
     // {
     //   render: () => (
     //     <Tooltip

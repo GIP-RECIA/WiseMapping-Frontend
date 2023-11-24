@@ -631,6 +631,12 @@
       "value": "E-mail"
     }
   ],
+  "login.login": [
+    {
+      "type": 0,
+      "value": "Login"
+    }
+  ],
   "login.error": [
     {
       "type": 0,

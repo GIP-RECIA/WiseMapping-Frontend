@@ -55,7 +55,7 @@ const LoginPage = (): React.ReactElement => {
 
   return (
     <div>
-      <Header type="only-signup" />
+      {/* <Header type="only-signup" /> */}
 
       <FormContainer>
         <Typography variant="h4" component="h1">
@@ -73,13 +73,12 @@ const LoginPage = (): React.ReactElement => {
             <CSRFInput />
             <Input
               name="username"
-              type="email"
+              type="text"
               label={intl.formatMessage({
                 id: 'login.email',
-                defaultMessage: 'Email',
+                defaultMessage: 'Login',
               })}
               required
-              autoComplete="email"
             />
             <Input
               name="password"
@@ -91,12 +90,12 @@ const LoginPage = (): React.ReactElement => {
               required
               autoComplete="current-password"
             />
-            <div>
+            {/* <div>
               <input name="remember-me" id="remember-me" type="checkbox" />
               <label htmlFor="remember-me">
                 <FormattedMessage id="login.remberme" defaultMessage="Remember me" />
               </label>
-            </div>
+            </div> */}
             <SubmitButton
               value={intl.formatMessage({
                 id: 'login.signin',
@@ -105,7 +104,7 @@ const LoginPage = (): React.ReactElement => {
             />
           </form>
         </FormControl>
-        <Link component={RouterLink} to="/c/forgot-password">
+        {/* <Link component={RouterLink} to="/c/forgot-password">
           <FormattedMessage id="login.forgotpwd" defaultMessage="Forgot Password ?" />
         </Link>
         <Separator
@@ -128,10 +127,10 @@ const LoginPage = (): React.ReactElement => {
               console.log('GoogleOauth2Url is not configured.');
             }
           }}
-        />
+        /> */}
       </FormContainer>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

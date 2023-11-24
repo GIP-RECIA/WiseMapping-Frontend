@@ -266,6 +266,9 @@
     "login.email": {
         "defaultMessage": "E-mail"
     },
+    "login.login": {
+        "defaultMessage": "Login"
+    },
     "login.error": {
         "defaultMessage": "L'adresse e-mail ou le mot de passe que vous avez entré n'est pas valide."
     },

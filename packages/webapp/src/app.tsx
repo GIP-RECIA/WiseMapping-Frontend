@@ -35,7 +35,6 @@ import RegistrationSuccessPage from './components/registration-success-page';
 import { ThemeProvider } from '@emotion/react';
 import RegistrationCallbackPage from './components/registration-callback';
 import ErrorPage from './components/error-page';
-import { useStyles } from './style';
 import { URI } from 'config';
 
 const EditorPage = React.lazy(() => import('./components/editor-page'));
@@ -72,20 +71,6 @@ const App = (): ReactElement => {
   const locale = AppI18n.getDefaultLocale();
   const overwriteView = window.errorMvcView;
 
-  const classes = useStyles();
-
-  const defineHeaderAndFooter = () => {
-    const extendedUportalHeaderScript = document.createElement('script');
-    extendedUportalHeaderScript.setAttribute('src', '/commun/extended-uportal-header.min.js');
-    document.head.appendChild(extendedUportalHeaderScript);
-    const extendedUportalFooterScript = document.createElement('script');
-    extendedUportalFooterScript.setAttribute('src', '/commun/extended-uportal-footer.min.js');
-    document.head.appendChild(extendedUportalFooterScript);
-  };
-
-  defineHeaderAndFooter();
-  const domain = window.location.hostname;
-
   // This is a hack to move error handling on Spring MVC.
   return locale.message ? (
     <Provider store={store}>
@@ -99,89 +84,60 @@ const App = (): ReactElement => {
             <MuiThemeProvider theme={theme}>
               <ThemeProvider theme={theme}>
                 <CssBaseline />
-                <div css={classes.root}>
-                  <header css={classes.header}>
-                    <extended-uportal-header
-                      domain={domain}
-                      service-name="WiseMapping"
-                      context-api-url="/portail"
-                      sign-out-url="/portail/Logout"
-                      default-org-logo-path="/annuaire_images/default_banner_v1.jpg"
-                      default-avatar-path="/images/icones/noPictureUser.svg"
-                      default-org-icon-path="/images/partners/netocentre-simple.svg"
-                      favorite-api-url="/portail/api/layout"
-                      layout-api-url="/portail/api/v4-3/dlm/layout.json"
-                      organization-api-url="/change-etablissement/rest/v2/structures/structs/"
-                      portlet-api-url="/portail/api/v4-3/dlm/portletRegistry.json?category=All%20categories"
-                      user-info-api-url="/portail/api/v5-1/userinfo?claims=private,name,ESCOSIRENCourant,ESCOSIREN&groups="
-                      user-info-portlet-url="/portail/p/ESCO-MCE"
-                      session-api-url="/portail/api/session.json"
-                      template-api-path="/commun/portal_template_api.tpl.json"
-                      switch-org-portlet-url="/portail/p/etablissement-swapper"
-                      favorites-portlet-card-size="small"
-                      grid-portlet-card-size="auto"
-                      hide-action-mode="never"
-                      show-favorites-in-slider="true"
-                      return-home-title="Aller à l'accueil"
-                      return-home-target="_self"
-                      icon-type="nine-square"
-                    />
-                  </header>
-                  <main css={classes.main}>
-                    {!overwriteView ? (
-                      <Router basename={URI}>
-                        <Routes>
-                          <Route path="/" element={<Redirect to="/c/login" />} />
-                          <Route path="/c/login" element={<LoginPage />} />
-                          {/* <Route path="/c/registration" element={<RegistationPage />} /> */}
-                          {/* <Route
+                {!overwriteView ? (
+                  <Router basename={URI}>
+                    <Routes>
+                      <Route path="/" element={<Redirect to="/c/login" />} />
+                      <Route path="/c/login" element={<LoginPage />} />
+                      {/* <Route path="/c/registration" element={<RegistationPage />} /> */}
+                      {/* <Route
                             path="/c/registration-google"
                             element={<RegistrationCallbackPage />}
                           /> */}
-                          {/* <Route
+                      {/* <Route
                             path="/c/registration-success"
                             element={<RegistrationSuccessPage />}
                           /> */}
-                          {/* <Route path="/c/forgot-password" element={<ForgotPasswordPage />} /> */}
-                          {/* <Route
+                      {/* <Route path="/c/forgot-password" element={<ForgotPasswordPage />} /> */}
+                      {/* <Route
                             path="/c/forgot-password-success"
                             element={<ForgotPasswordSuccessPage />}
                           /> */}
-                          <Route
-                            path="/c/maps/"
-                            element={
-                              <Suspense
-                                fallback={
-                                  <div>
-                                    <FormattedMessage
-                                      id="dialog.loading"
-                                      defaultMessage="Loading ..."
-                                    />
-                                  </div>
-                                }
-                              >
-                                <MapsPage />
-                              </Suspense>
+                      <Route
+                        path="/c/maps/"
+                        element={
+                          <Suspense
+                            fallback={
+                              <div>
+                                <FormattedMessage
+                                  id="dialog.loading"
+                                  defaultMessage="Loading ..."
+                                />
+                              </div>
                             }
-                          />
-                          <Route
-                            path="/c/maps/:id/edit"
-                            element={
-                              <Suspense
-                                fallback={
-                                  <div>
-                                    <FormattedMessage
-                                      id="dialog.loading"
-                                      defaultMessage="Loading ..."
-                                    />
-                                  </div>
-                                }
-                              >
-                                <EditorPage isTryMode={false} />
-                              </Suspense>
+                          >
+                            <MapsPage />
+                          </Suspense>
+                        }
+                      />
+                      <Route
+                        path="/c/maps/:id/edit"
+                        element={
+                          <Suspense
+                            fallback={
+                              <div>
+                                <FormattedMessage
+                                  id="dialog.loading"
+                                  defaultMessage="Loading ..."
+                                />
+                              </div>
                             }
-                          />
-                          {/* <Route
+                          >
+                            <EditorPage isTryMode={false} />
+                          </Suspense>
+                        }
+                      />
+                      {/* <Route
                             path="/c/maps/:id/try"
                             element={
                               <Suspense
@@ -198,21 +154,13 @@ const App = (): ReactElement => {
                               </Suspense>
                             }
                           /> */}
-                        </Routes>
-                      </Router>
-                    ) : (
-                      <Router>
-                        <ErrorPage isSecurity={overwriteView === 'securityError'} />
-                      </Router>
-                    )}
-                  </main>
-                  <footer>
-                    <extended-uportal-footer
-                      domain={domain}
-                      template-api-path="/commun/portal_template_api.tpl.json"
-                    />
-                  </footer>
-                </div>
+                    </Routes>
+                  </Router>
+                ) : (
+                  <Router>
+                    <ErrorPage isSecurity={overwriteView === 'securityError'} />
+                  </Router>
+                )}
               </ThemeProvider>
             </MuiThemeProvider>
           </StyledEngineProvider>

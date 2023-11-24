@@ -15,6 +15,7 @@ import Separator from '../common/separator';
 import GoogleButton from '../common/google-button';
 import AppConfig from '../../classes/app-config';
 import CSRFInput from '../common/csrf-input';
+import { URI } from 'config';
 
 const LoginError = () => {
   // @Todo: This must be reviewed to be based on navigation state.
@@ -52,6 +53,8 @@ const LoginPage = (): React.ReactElement => {
     });
     ReactGA.send({ hitType: 'pageview', page: window.location.pathname, title: 'Login' });
   }, []);
+
+  window.location.href = URI;
 
   return (
     <div>

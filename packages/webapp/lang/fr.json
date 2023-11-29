@@ -560,5 +560,8 @@
 	},
 	"forgot.oauth.back": {
 	  "defaultMessage": "Retour connexion"
-	}
+	},
+    "error": {
+      "defaultMessage": "Une erreur est survenue. S'il vous plaît, exportez votre travail et rechargez la page."
+    }
 }

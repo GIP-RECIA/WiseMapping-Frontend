@@ -24,7 +24,7 @@ import {
   LocalStorageManager,
   MockPersistenceManager,
 } from '@wisemapping/editor';
-import { IntlProvider } from 'react-intl';
+import { IntlProvider, createIntl, createIntlCache } from 'react-intl';
 import AppI18n, { Locales } from '../../classes/app-i18n';
 import { useDispatch, useSelector } from 'react-redux';
 import { hotkeysEnabled } from '../../redux/editorSlice';
@@ -45,7 +45,7 @@ import exampleMap from '../../classes/client/mock-client/example-map.wxml';
 import ClientHealthSentinel from '../common/client-health-sentinel';
 import { URI } from 'config';
 
-const buildPersistenceManagerForEditor = (mode: string): PersistenceManager => {
+const buildPersistenceManagerForEditor = (mode: string, intl): PersistenceManager => {
   let persistenceManager: PersistenceManager;
   if (AppConfig.isRestClient()) {
     if (mode === 'edition-owner' || mode === 'edition-editor') {
@@ -63,6 +63,12 @@ const buildPersistenceManagerForEditor = (mode: string): PersistenceManager => {
       );
     }
     persistenceManager.addErrorHandler((error) => {
+      alert(
+        intl.formatMessage({
+          id: 'error',
+          defaultMessage: 'An error occurred. Please export your work and reload the page.',
+        }),
+      );
       if (error.errorType === 'session-expired') {
         // TODO: this line was in RestPersistenceClient, do something similar here
         //client.sessionExpired();
@@ -105,6 +111,16 @@ const EditorPage = ({ isTryMode }: EditorPropsType): React.ReactElement => {
   const theme = useTheme();
   const client: Client = useSelector(activeInstance);
   const dispatch = useDispatch();
+
+  const cache = createIntlCache();
+  const intl = createIntl(
+    {
+      defaultLocale: userLocale.code,
+      locale: Locales.EN.code,
+      messages: userLocale.message,
+    },
+    cache,
+  );
 
   useEffect(() => {
     if (client) {
@@ -157,7 +173,7 @@ const EditorPage = ({ isTryMode }: EditorPropsType): React.ReactElement => {
   let mapInfo: MapInfo;
   if (loadCompleted) {
     options = EditorOptionsBuilder.build(userLocale.code, mode, hotkey);
-    persistence = buildPersistenceManagerForEditor(mode);
+    persistence = buildPersistenceManagerForEditor(mode, intl);
     mapInfo = new MapInfoImpl(
       mapId,
       client,

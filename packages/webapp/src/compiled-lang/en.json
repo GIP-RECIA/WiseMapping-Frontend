@@ -1128,5 +1128,11 @@
       "type": 0,
       "value": "Message"
     }
+  ],
+  "error": [
+    {
+      "type": 0,
+      "value": "An error occurred. Please export your work and reload the page."
+    }
   ]
 }

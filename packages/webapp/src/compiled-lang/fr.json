@@ -1128,5 +1128,11 @@
       "type": 0,
       "value": "Message"
     }
+  ],
+  "error": [
+    {
+      "type": 0,
+      "value": "Une erreur est survenue. S'il vous plaît, exportez votre travail et rechargez la page."
+    }
   ]
 }

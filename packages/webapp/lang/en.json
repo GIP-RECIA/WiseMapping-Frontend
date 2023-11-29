@@ -553,5 +553,8 @@
   },
   "share.message": {
     "defaultMessage": "Message"
+  },
+  "error": {
+    "defaultMessage": "An error occurred. Please export your work and reload the page."
   }
 }

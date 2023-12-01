@@ -17,7 +17,7 @@
  */
 import React, { ReactElement, useEffect } from 'react';
 import NodeProperty from '../../../../classes/model/node-property';
-import EmojiPicker, { EmojiClickData } from 'emoji-picker-react';
+import EmojiPicker, { EmojiClickData, EmojiStyle } from 'emoji-picker-react';
 import DesignerKeyboard from '@wisemapping/mindplot/src/components/DesignerKeyboard';
 import IconImageTab from './image-icon-tab';
 import Switch from '@mui/material/Switch';
@@ -25,6 +25,7 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { FormattedMessage } from 'react-intl';
 import Box from '@mui/material/Box';
+import { URI } from 'config';
 
 type IconPickerProp = {
   triggerClose: () => void;
@@ -60,6 +61,9 @@ const IconPicker = ({ triggerClose, iconModel }: IconPickerProp): ReactElement =
           lazyLoadEmojis={true}
           autoFocusSearch={true}
           previewConfig={{ showPreview: false }}
+          getEmojiUrl={(unified: string, emojiStyle: EmojiStyle) =>
+            `${URI}/static/emoji/${unified}.png`
+          }
         />
       )}
       {!checked && <IconImageTab iconModel={iconModel} triggerClose={triggerClose} />}

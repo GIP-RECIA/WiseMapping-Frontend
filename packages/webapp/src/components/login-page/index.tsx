@@ -56,6 +56,8 @@ const LoginPage = (): React.ReactElement => {
 
   window.location.href = URI;
 
+  return <></>;
+
   return (
     <div>
       {/* <Header type="only-signup" /> */}

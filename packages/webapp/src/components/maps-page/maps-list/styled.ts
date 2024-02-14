@@ -63,7 +63,7 @@ export const useStyles = () => {
     toolbar: {
       display: 'flex',
       borderBottom: '1px solid #cccccc',
-      padding: '0',
+      padding: '0 16px 0 16px',
       marging: '0',
     },
     toolbarActions: {

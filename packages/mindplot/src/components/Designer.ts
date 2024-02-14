@@ -141,7 +141,7 @@ class Designer extends EventDispispatcher<DesignerEventType> {
 
   private _registerWheelEvents(): void {
     const zoomFactor = 1.02;
-    document.addEventListener(
+    document.getElementById('mindmap-comp')?.addEventListener(
       'wheel',
       (event: WheelEvent) => {
         // TODO re-do this better. This line avoid manage zoom with mouse wheel if mindplot kb shortcuts are disabled.

@@ -15,7 +15,7 @@
         "defaultMessage": "Nom de famille"
     },
     "registration.page-title": {
-        "defaultMessage": "Inscription | WiseMapping"
+        "defaultMessage": "Inscription"
     },
     "accountinfo.title": {
         "defaultMessage": "Informations de compte"
@@ -174,7 +174,7 @@
         "defaultMessage": "E-mail"
     },
     "forgot.page-title": {
-        "defaultMessage": "Mot de passe oublié | WiseMapping"
+        "defaultMessage": "Mot de passe oublié"
     },
     "forgot.register": {
         "defaultMessage": "Envoyer le lien de récupération"
@@ -189,7 +189,7 @@
         "defaultMessage": "réinitialisez votre mot de passe"
     },
     "forgotsuccess.page-title": {
-        "defaultMessage": "Mot de passe récupéré | WiseMapping"
+        "defaultMessage": "Mot de passe récupéré"
     },
     "header.donthaveaccount": {
         "defaultMessage": "Vous n'avez pas de compte ?"
@@ -280,7 +280,7 @@
         "description": "Base de données de production manquante configurée"
     },
     "login.page-title": {
-        "defaultMessage": "Connexion | WiseMapping"
+        "defaultMessage": "Connexion"
     },
     "login.password": {
         "defaultMessage": "Mot de passe"
@@ -355,7 +355,7 @@
         "defaultMessage": "Favoris"
     },
     "maps.page-title": {
-        "defaultMessage": "Mes cartes | WiseMapping"
+        "defaultMessage": "Mes cartes"
     },
     "maps.revert": {
         "defaultMessage": "Revenir"
@@ -406,7 +406,7 @@
         "defaultMessage": "Publier"
     },
     "registation.success-title": {
-        "defaultMessage": "Inscription réussie | WiseMapping"
+        "defaultMessage": "Inscription réussie"
     },
     "registration.desc": {
         "defaultMessage": "L'inscription est gratuite et ne prends qu'un instant"

@@ -4,6 +4,7 @@ import Header from '../layout/header';
 import Typography from '@mui/material/Typography';
 import ReactGA from 'react-ga4';
 import { ErrorBody } from './styled';
+import { APP_NAME } from 'config';
 
 export type ErrorPageType = {
   isSecurity: boolean;
@@ -13,10 +14,11 @@ const ErrorPage = ({ isSecurity }: ErrorPageType): React.ReactElement => {
   const intl = useIntl();
 
   useEffect(() => {
-    document.title = intl.formatMessage({
-      id: 'error.page-title',
-      defaultMessage: 'Unexpected Error | WiseMapping',
-    });
+    document.title =
+      intl.formatMessage({
+        id: 'error.page-title',
+        defaultMessage: 'Unexpected Error',
+      }) + ` | ${APP_NAME}`;
     ReactGA.send({ hitType: 'pageview', page: window.location.pathname, title: 'ErrorPage' });
   }, []);
 

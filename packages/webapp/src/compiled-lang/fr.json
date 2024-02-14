@@ -390,7 +390,7 @@
   "forgot.page-title": [
     {
       "type": 0,
-      "value": "Mot de passe oublié | WiseMapping"
+      "value": "Mot de passe oublié"
     }
   ],
   "forgot.register": [
@@ -420,7 +420,7 @@
   "forgotsuccess.page-title": [
     {
       "type": 0,
-      "value": "Mot de passe récupéré | WiseMapping"
+      "value": "Mot de passe récupéré"
     }
   ],
   "header.donthaveaccount": [
@@ -664,7 +664,7 @@
   "login.page-title": [
     {
       "type": 0,
-      "value": "Connexion | WiseMapping"
+      "value": "Connexion"
     }
   ],
   "login.password": [
@@ -826,7 +826,7 @@
   "maps.page-title": [
     {
       "type": 0,
-      "value": "Mes cartes | WiseMapping"
+      "value": "Mes cartes"
     }
   ],
   "maps.revert": [
@@ -934,7 +934,7 @@
   "registation.success-title": [
     {
       "type": 0,
-      "value": "Inscription réussie | WiseMapping"
+      "value": "Inscription réussie"
     }
   ],
   "registration.callback.back": [
@@ -1012,7 +1012,7 @@
   "registration.page-title": [
     {
       "type": 0,
-      "value": "Inscription | WiseMapping"
+      "value": "Inscription"
     }
   ],
   "registration.password": [

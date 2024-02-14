@@ -62,6 +62,7 @@ import LabelDeleteConfirm from './maps-list/label-delete-confirm';
 import ReactGA from 'react-ga4';
 import { CSSObject, Interpolation, Theme } from '@emotion/react';
 import withEmotionStyles from '../HOCs/withEmotionStyles';
+import { APP_NAME } from 'config';
 
 export type Filter = GenericFilter | LabelFilter;
 
@@ -115,10 +116,11 @@ const MapsPage = (): ReactElement => {
   );
 
   useEffect(() => {
-    document.title = intl.formatMessage({
-      id: 'maps.page-title',
-      defaultMessage: 'My Maps | WiseMapping',
-    });
+    document.title =
+      intl.formatMessage({
+        id: 'maps.page-title',
+        defaultMessage: 'My Maps',
+      }) + ` | ${APP_NAME}`;
     window.scrollTo(0, 0);
     ReactGA.send({ hitType: 'pageview', page: window.location.pathname, title: 'Maps List' });
   }, []);

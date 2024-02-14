@@ -18,6 +18,7 @@ import Typography from '@mui/material/Typography';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@mui/material';
 import CSRFInput from '../common/csrf-input';
+import { APP_NAME } from 'config';
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState<string>('');
@@ -108,10 +109,11 @@ const ForgotPassword = () => {
 const ForgotPasswordPage = (): React.ReactElement => {
   const intl = useIntl();
   useEffect(() => {
-    document.title = intl.formatMessage({
-      id: 'forgot.page-title',
-      defaultMessage: 'Forgot Password | WiseMapping',
-    });
+    document.title =
+      intl.formatMessage({
+        id: 'forgot.page-title',
+        defaultMessage: 'Forgot Password',
+      }) + ` | ${APP_NAME}`;
     ReactGA.send({
       hitType: 'pageview',
       page: window.location.pathname,

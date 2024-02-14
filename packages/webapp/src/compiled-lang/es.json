@@ -392,7 +392,7 @@
   "forgot.page-title": [
     {
       "type": 0,
-      "value": "Olvidé mi contraseña | WiseMapping"
+      "value": "Olvidé mi contraseña"
     }
   ],
   "forgot.register": [
@@ -422,7 +422,7 @@
   "forgotsuccess.page-title": [
     {
       "type": 0,
-      "value": "Contraseña recuperada | WiseMapping"
+      "value": "Contraseña recuperada"
     }
   ],
   "header.donthaveaccount": [
@@ -670,7 +670,7 @@
   "login.page-title": [
     {
       "type": 0,
-      "value": "Iniciar sesión | WiseMapping"
+      "value": "Iniciar sesión"
     }
   ],
   "login.password": [
@@ -832,7 +832,7 @@
   "maps.page-title": [
     {
       "type": 0,
-      "value": "Mis Mapas | WiseMapping"
+      "value": "Mis Mapas"
     }
   ],
   "maps.revert": [
@@ -940,7 +940,7 @@
   "registation.success-title": [
     {
       "type": 0,
-      "value": "Éxito de registro | WiseMapping"
+      "value": "Éxito de registro"
     }
   ],
   "registration.callback.back": [
@@ -1018,7 +1018,7 @@
   "registration.page-title": [
     {
       "type": 0,
-      "value": "Registrarse | WiseMapping"
+      "value": "Registrarse"
     }
   ],
   "registration.password": [

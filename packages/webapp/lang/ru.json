@@ -171,7 +171,7 @@
 		"defaultMessage": "Email"
 	},
 	"forgot.page-title": {
-		"defaultMessage": "Забыл пароль | WiseMapping"
+		"defaultMessage": "Забыл пароль"
 	},
 	"forgot.register": {
 		"defaultMessage": "Отправить"
@@ -186,7 +186,7 @@
 		"defaultMessage": "Установить новый пароль"
 	},
 	"forgotsuccess.page-title": {
-		"defaultMessage": "Пароль восстановлен | WiseMapping"
+		"defaultMessage": "Пароль восстановлен"
 	},
 	"header.donthaveaccount": {
 		"defaultMessage": "Нет аккаунта?"
@@ -274,7 +274,7 @@
 		"description": "Missing production database configured"
 	},
 	"login.page-title": {
-		"defaultMessage": "Вход | WiseMapping"
+		"defaultMessage": "Вход"
 	},
 	"login.password": {
 		"defaultMessage": "Пароль"
@@ -349,7 +349,7 @@
 		"defaultMessage": "Отмеченные"
 	},
 	"maps.page-title": {
-		"defaultMessage": "Мои карты | WiseMapping"
+		"defaultMessage": "Мои карты"
 	},
 	"maps.revert": {
 		"defaultMessage": "Отменить"
@@ -400,7 +400,7 @@
 		"defaultMessage": "Опубликовать"
 	},
 	"registation.success-title": {
-		"defaultMessage": "Успешная регистрация | WiseMapping"
+		"defaultMessage": "Успешная регистрация"
 	},
 	"registration.desc": {
 		"defaultMessage": "Регистрация бесплатна и займет всего минуту"

@@ -7,15 +7,17 @@ import { Link as RouterLink } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ReactGA from 'react-ga4';
+import { APP_NAME } from 'config';
 
 const ForgotPasswordSuccessPage = (): React.ReactElement => {
   const intl = useIntl();
 
   useEffect(() => {
-    document.title = intl.formatMessage({
-      id: 'forgotsuccess.page-title',
-      defaultMessage: 'Password Recovered | WiseMapping',
-    });
+    document.title =
+      intl.formatMessage({
+        id: 'forgotsuccess.page-title',
+        defaultMessage: 'Password Recovered',
+      }) + ` | ${APP_NAME}`;
     ReactGA.send({
       hitType: 'pageview',
       page: window.location.pathname,

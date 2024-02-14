@@ -1,3 +1,4 @@
 const URI = '';
+const APP_NAME = 'WiseMapping';
 
-export { URI };
+export { URI, APP_NAME };

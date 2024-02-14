@@ -398,7 +398,7 @@
   "forgot.page-title": [
     {
       "type": 0,
-      "value": "Passwort vergessen | WiseMapping"
+      "value": "Passwort vergessen"
     }
   ],
   "forgot.register": [
@@ -428,7 +428,7 @@
   "forgotsuccess.page-title": [
     {
       "type": 0,
-      "value": "Passwort wiederhergestellt | WiseMapping"
+      "value": "Passwort wiederhergestellt"
     }
   ],
   "header.donthaveaccount": [
@@ -666,7 +666,7 @@
   "login.page-title": [
     {
       "type": 0,
-      "value": "Anmelden | WiseMapping"
+      "value": "Anmelden"
     }
   ],
   "login.password": [
@@ -828,7 +828,7 @@
   "maps.page-title": [
     {
       "type": 0,
-      "value": "Meine Mindmaps | WiseMapping"
+      "value": "Meine Mindmaps"
     }
   ],
   "maps.revert": [
@@ -936,7 +936,7 @@
   "registation.success-title": [
     {
       "type": 0,
-      "value": "Registrierung erfolgreich | WiseMapping"
+      "value": "Registrierung erfolgreich"
     }
   ],
   "registration.callback.back": [

@@ -171,7 +171,7 @@
         "defaultMessage": "E-Mail"
     },
     "forgot.page-title": {
-        "defaultMessage": "Passwort vergessen | WiseMapping"
+        "defaultMessage": "Passwort vergessen"
     },
     "forgot.register": {
         "defaultMessage": "Wiederherstellungslink senden"
@@ -186,7 +186,7 @@
         "defaultMessage": "Setze dein Passwort zurück"
     },
     "forgotsuccess.page-title": {
-        "defaultMessage": "Passwort wiederhergestellt | WiseMapping"
+        "defaultMessage": "Passwort wiederhergestellt"
     },
     "header.donthaveaccount": {
         "defaultMessage": "Du hast noch kein Konto?"
@@ -274,7 +274,7 @@
         "description": "Fehlende Produktionsdatenbank konfiguriert"
     },
     "login.page-title": {
-        "defaultMessage": "Anmelden | WiseMapping"
+        "defaultMessage": "Anmelden"
     },
     "login.password": {
         "defaultMessage": "Passwort"
@@ -349,7 +349,7 @@
         "defaultMessage": "Favoriten"
     },
     "maps.page-title": {
-        "defaultMessage": "Meine Mindmaps | WiseMapping"
+        "defaultMessage": "Meine Mindmaps"
     },
     "maps.revert": {
         "defaultMessage": "Rückgängig machen"
@@ -400,7 +400,7 @@
         "defaultMessage": "Veröffentlichen"
     },
     "registation.success-title": {
-        "defaultMessage": "Registrierung erfolgreich | WiseMapping"
+        "defaultMessage": "Registrierung erfolgreich"
     },
     "registration.desc": {
         "defaultMessage": "Nimm dir einen Moment Zeit. Die Anmeldung ist kostenlos."

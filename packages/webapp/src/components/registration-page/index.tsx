@@ -22,6 +22,7 @@ import GoogleButton from '../common/google-button';
 import { Grid, Link } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 import { recaptchaContainerStyle } from './style';
+import { APP_NAME } from 'config';
 
 export type Model = {
   email: string;
@@ -203,10 +204,11 @@ const RegistationPage = (): React.ReactElement => {
   const intl = useIntl();
 
   useEffect(() => {
-    document.title = intl.formatMessage({
-      id: 'registration.page-title',
-      defaultMessage: 'Registration | WiseMapping',
-    });
+    document.title =
+      intl.formatMessage({
+        id: 'registration.page-title',
+        defaultMessage: 'Registration',
+      }) + ` | ${APP_NAME}`;
     ReactGA.send({
       hitType: 'pageview',
       page: window.location.pathname,

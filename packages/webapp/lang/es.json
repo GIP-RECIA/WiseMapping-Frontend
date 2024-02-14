@@ -12,7 +12,7 @@
         "defaultMessage": "Primer nombre"
     },
     "registration.page-title": {
-        "defaultMessage": "Registrarse | WiseMapping"
+        "defaultMessage": "Registrarse"
     },
     "accountinfo.lastname": {
         "defaultMessage": "Apellido"
@@ -183,7 +183,7 @@
         "defaultMessage": "Correo electrónico"
     },
     "forgot.page-title": {
-        "defaultMessage": "Olvidé mi contraseña | WiseMapping"
+        "defaultMessage": "Olvidé mi contraseña"
     },
     "forgot.register": {
         "defaultMessage": "Enviar enlace de recuperación"
@@ -198,7 +198,7 @@
         "defaultMessage": "Restablecer su contraseña"
     },
     "forgotsuccess.page-title": {
-        "defaultMessage": "Contraseña recuperada | WiseMapping"
+        "defaultMessage": "Contraseña recuperada"
     },
     "header.donthaveaccount": {
         "defaultMessage": "¿No tenes una cuenta?"
@@ -313,7 +313,7 @@
         "description": "Falta la base de datos de producción configurada"
     },
     "login.page-title": {
-        "defaultMessage": "Iniciar sesión | WiseMapping"
+        "defaultMessage": "Iniciar sesión"
     },
     "login.password": {
         "defaultMessage": "Contraseña"
@@ -388,7 +388,7 @@
         "defaultMessage": "Destacados"
     },
     "maps.page-title": {
-        "defaultMessage": "Mis Mapas | WiseMapping"
+        "defaultMessage": "Mis Mapas"
     },
     "maps.revert": {
         "defaultMessage": "Revertir"
@@ -439,7 +439,7 @@
         "defaultMessage": "Publicar"
     },
     "registation.success-title": {
-        "defaultMessage": "Éxito de registro | WiseMapping"
+        "defaultMessage": "Éxito de registro"
     },
     "registration.desc": {
         "defaultMessage": "Registrarse es gratis y solo tómese un momento"

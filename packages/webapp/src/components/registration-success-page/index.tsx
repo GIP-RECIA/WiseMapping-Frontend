@@ -7,15 +7,17 @@ import { Link as RouterLink } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ReactGA from 'react-ga4';
+import { APP_NAME } from 'config';
 
 const RegistrationSuccessPage = (): React.ReactElement => {
   const intl = useIntl();
 
   useEffect(() => {
-    document.title = intl.formatMessage({
-      id: 'registation.success-title',
-      defaultMessage: 'Registation Success | WiseMapping',
-    });
+    document.title =
+      intl.formatMessage({
+        id: 'registation.success-title',
+        defaultMessage: 'Registation Success',
+      }) + ` | ${APP_NAME}`;
     ReactGA.send({
       hitType: 'pageview',
       page: window.location.pathname,

@@ -386,7 +386,7 @@
   "forgot.page-title": [
     {
       "type": 0,
-      "value": "Забыл пароль | WiseMapping"
+      "value": "Забыл пароль"
     }
   ],
   "forgot.register": [
@@ -416,7 +416,7 @@
   "forgotsuccess.page-title": [
     {
       "type": 0,
-      "value": "Пароль восстановлен | WiseMapping"
+      "value": "Пароль восстановлен"
     }
   ],
   "header.donthaveaccount": [
@@ -606,7 +606,7 @@
   "login.page-title": [
     {
       "type": 0,
-      "value": "Вход | WiseMapping"
+      "value": "Вход"
     }
   ],
   "login.password": [
@@ -768,7 +768,7 @@
   "maps.page-title": [
     {
       "type": 0,
-      "value": "Мои карты | WiseMapping"
+      "value": "Мои карты"
     }
   ],
   "maps.revert": [
@@ -876,7 +876,7 @@
   "registation.success-title": [
     {
       "type": 0,
-      "value": "Успешная регистрация | WiseMapping"
+      "value": "Успешная регистрация"
     }
   ],
   "registration.callback.back": [

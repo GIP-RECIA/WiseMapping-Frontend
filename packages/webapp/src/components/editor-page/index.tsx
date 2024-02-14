@@ -43,7 +43,7 @@ import Client from '../../classes/client';
 import AppConfig from '../../classes/app-config';
 import exampleMap from '../../classes/client/mock-client/example-map.wxml';
 import ClientHealthSentinel from '../common/client-health-sentinel';
-import { URI } from 'config';
+import { APP_NAME, URI } from 'config';
 
 const buildPersistenceManagerForEditor = (mode: string, intl): PersistenceManager => {
   let persistenceManager: PersistenceManager;
@@ -186,7 +186,7 @@ const EditorPage = ({ isTryMode }: EditorPropsType): React.ReactElement => {
 
   useEffect(() => {
     if (mapInfo?.getTitle()) {
-      document.title = `${mapInfo.getTitle()} | WiseMapping `;
+      document.title = `${mapInfo.getTitle()} | ${APP_NAME}`;
     }
   }, [mapInfo?.getTitle()]);
 

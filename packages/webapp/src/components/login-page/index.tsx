@@ -15,7 +15,7 @@ import Separator from '../common/separator';
 import GoogleButton from '../common/google-button';
 import AppConfig from '../../classes/app-config';
 import CSRFInput from '../common/csrf-input';
-import { URI } from 'config';
+import { APP_NAME, URI } from 'config';
 
 const LoginError = () => {
   // @Todo: This must be reviewed to be based on navigation state.
@@ -47,10 +47,11 @@ const LoginPage = (): React.ReactElement => {
   const intl = useIntl();
 
   useEffect(() => {
-    document.title = intl.formatMessage({
-      id: 'login.page-title',
-      defaultMessage: 'Login | WiseMapping',
-    });
+    document.title =
+      intl.formatMessage({
+        id: 'login.page-title',
+        defaultMessage: 'Login',
+      }) + ` | ${APP_NAME}`;
     ReactGA.send({ hitType: 'pageview', page: window.location.pathname, title: 'Login' });
   }, []);
 

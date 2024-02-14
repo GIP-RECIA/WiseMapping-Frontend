@@ -392,7 +392,7 @@
   "forgot.page-title": [
     {
       "type": 0,
-      "value": "Forgot Password | WiseMapping"
+      "value": "Forgot Password"
     }
   ],
   "forgot.register": [
@@ -422,7 +422,7 @@
   "forgotsuccess.page-title": [
     {
       "type": 0,
-      "value": "Password Recovered | WiseMapping"
+      "value": "Password Recovered"
     }
   ],
   "header.donthaveaccount": [
@@ -664,7 +664,7 @@
   "login.page-title": [
     {
       "type": 0,
-      "value": "Login | WiseMapping"
+      "value": "Login"
     }
   ],
   "login.password": [
@@ -826,7 +826,7 @@
   "maps.page-title": [
     {
       "type": 0,
-      "value": "My Maps | WiseMapping"
+      "value": "My Maps"
     }
   ],
   "maps.revert": [
@@ -934,7 +934,7 @@
   "registation.success-title": [
     {
       "type": 0,
-      "value": "Registation Success | WiseMapping"
+      "value": "Registation Success"
     }
   ],
   "registration.callback.back": [
@@ -1012,7 +1012,7 @@
   "registration.page-title": [
     {
       "type": 0,
-      "value": "Registration | WiseMapping"
+      "value": "Registration"
     }
   ],
   "registration.password": [

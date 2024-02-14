@@ -14,6 +14,7 @@ import { useNavigate } from 'react-router-dom';
 import { CircularProgress } from '@mui/material';
 import GlobalError from '../form/global-error';
 import { buttonsStyle } from './style';
+import { APP_NAME } from 'config';
 
 const RegistrationCallbackPage = (): React.ReactElement => {
   const intl = useIntl();
@@ -24,10 +25,11 @@ const RegistrationCallbackPage = (): React.ReactElement => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = intl.formatMessage({
-      id: 'registation.success-title',
-      defaultMessage: 'Registation Success | WiseMapping',
-    });
+    document.title =
+      intl.formatMessage({
+        id: 'registation.success-title',
+        defaultMessage: 'Registation Success',
+      }) + ` | ${APP_NAME}`;
     ReactGA.send({
       hitType: 'pageview',
       page: window.location.pathname,

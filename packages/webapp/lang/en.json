@@ -195,7 +195,7 @@
     "defaultMessage": "You dont need password, please login using Google."
   },
   "forgot.page-title": {
-    "defaultMessage": "Forgot Password | WiseMapping"
+    "defaultMessage": "Forgot Password"
   },
   "forgot.register": {
     "defaultMessage": "Send recovery link"
@@ -210,7 +210,7 @@
     "defaultMessage": "Reset your password"
   },
   "forgotsuccess.page-title": {
-    "defaultMessage": "Password Recovered | WiseMapping"
+    "defaultMessage": "Password Recovered"
   },
   "header.donthaveaccount": {
     "defaultMessage": "Don't have an account ?"
@@ -327,7 +327,7 @@
     "defaultMessage": "Sign in with Google"
   },
   "login.page-title": {
-    "defaultMessage": "Login | WiseMapping"
+    "defaultMessage": "Login"
   },
   "login.password": {
     "defaultMessage": "Password"
@@ -402,7 +402,7 @@
     "defaultMessage": "Starred"
   },
   "maps.page-title": {
-    "defaultMessage": "My Maps | WiseMapping"
+    "defaultMessage": "My Maps"
   },
   "maps.revert": {
     "defaultMessage": "Revert"
@@ -456,7 +456,7 @@
     "defaultMessage": "An error occurred validating your identity with Google, you can try again from the login page"
   },
   "registation.success-title": {
-    "defaultMessage": "Registation Success | WiseMapping"
+    "defaultMessage": "Registation Success"
   },
   "registration.callback.back": {
     "defaultMessage": "Back to login"
@@ -495,7 +495,7 @@
     "defaultMessage": "Last Name"
   },
   "registration.page-title": {
-    "defaultMessage": "Registration | WiseMapping"
+    "defaultMessage": "Registration"
   },
   "registration.password": {
     "defaultMessage": "Password"

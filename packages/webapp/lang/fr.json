@@ -75,7 +75,7 @@
         "defaultMessage": "Renommer"
     },
     "action.rename-description-placeholder": {
-        "defaultMessage": "La description"
+        "defaultMessage": "Description"
     },
     "action.rename-name-placeholder": {
         "defaultMessage": "Nom"

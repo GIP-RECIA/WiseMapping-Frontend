@@ -152,7 +152,7 @@
   "action.rename-description-placeholder": [
     {
       "type": 0,
-      "value": "La description"
+      "value": "Description"
     }
   ],
   "action.rename-name-placeholder": [
@@ -502,7 +502,7 @@
   "info.description": [
     {
       "type": 0,
-      "value": "La description"
+      "value": "Description"
     }
   ],
   "info.description-msg": [

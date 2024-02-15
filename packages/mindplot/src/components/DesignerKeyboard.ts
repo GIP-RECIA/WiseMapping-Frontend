@@ -195,6 +195,16 @@ class DesignerKeyboard extends Keyboard {
       }
     });
 
+    document.getElementById('mindmap-comp')?.addEventListener('mouseenter', () => {
+      super.resume();
+      DesignerKeyboard.resume();
+    });
+
+    document.getElementById('mindmap-comp')?.addEventListener('mouseleave', () => {
+      super.pause();
+      DesignerKeyboard.pause();
+    });
+
     $(document).on('keypress', (event) => {
       // Needs to be ignored ?
       if (

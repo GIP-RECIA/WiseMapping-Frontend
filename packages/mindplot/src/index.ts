@@ -22,6 +22,7 @@ import PersistenceManager from './components/PersistenceManager';
 import Designer from './components/Designer';
 import LocalStorageManager from './components/LocalStorageManager';
 import RESTPersistenceManager from './components/RestPersistenceManager';
+import CustomRESTPersistenceManager from './components/CustomRestPersistenceManager';
 import MockPersistenceManager from './components/MockPersistenceManager';
 import DesignerOptionsBuilder from './components/DesignerOptionsBuilder';
 import ImageExporterFactory from './components/export/ImageExporterFactory';
@@ -73,6 +74,7 @@ export {
   DesignerBuilder,
   PersistenceManager,
   RESTPersistenceManager,
+  CustomRESTPersistenceManager,
   MockPersistenceManager,
   LocalStorageManager,
   DesignerOptionsBuilder,

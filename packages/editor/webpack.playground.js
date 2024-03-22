@@ -18,11 +18,17 @@ const playgroundConfig = {
     library: {
       type: 'umd',
     },
+    publicPath: '/quentin',
   },
   devServer: {
     historyApiFallback: true,
     port: 8081,
     open: false,
+    proxy: {
+      '/quentin/api': {
+        target: 'http://localhost:8090',
+      },
+    },
   },
   plugins: [
     new CopyPlugin({

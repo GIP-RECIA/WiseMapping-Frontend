@@ -16,8 +16,10 @@
  *   limitations under the License.
  */
 import React, { useEffect } from 'react';
-import Editor, { EditorOptions } from '@wisemapping/editor';
-import {
+import Editor, {
+  EditorOptions,
+  MapInfo,
+  Mindmap,
   EditorRenderMode,
   PersistenceManager,
   RESTPersistenceManager,
@@ -38,7 +40,6 @@ import {
 import EditorOptionsBuilder from './EditorOptionsBuilder';
 import { useTheme } from '@mui/material/styles';
 import MapInfoImpl from '../../classes/editor-map-info';
-import { MapInfo } from '@wisemapping/editor';
 import Client from '../../classes/client';
 import AppConfig from '../../classes/app-config';
 import exampleMap from '../../classes/client/mock-client/example-map.wxml';
@@ -173,6 +174,23 @@ const EditorPage = ({ isTryMode }: EditorPropsType): React.ReactElement => {
     }
   }, [mapInfo?.getTitle()]);
 
+  const handleUpdated = (mindmap: Mindmap) => {
+    const cleanItem = (item) => {
+      return {
+        children: item.getChildren().map((child) => cleanItem(child)),
+        features: item.getFeatures().map((feature) => {
+          return { type: feature.getType(), attributes: feature.getAttributes().id };
+        }),
+        props: item.getProperties(),
+      };
+    };
+    console.log(
+      'UPDATED',
+      mindmap.getBranches().map((branche) => cleanItem(branche)),
+      mindmap.getRelationships(),
+    );
+  };
+
   return loadCompleted ? (
     <IntlProvider
       locale={userLocale.code}
@@ -199,6 +217,7 @@ const EditorPage = ({ isTryMode }: EditorPropsType): React.ReactElement => {
             <></>
           )
         }
+        onChange={handleUpdated}
       />
       {activeDialog && (
         <ActionDispatcher

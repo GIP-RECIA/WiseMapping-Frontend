@@ -18,8 +18,27 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import Editor, { EditorOptions } from '../../../../src/index';
-import { LocalStorageManager, Designer } from '@wisemapping/mindplot';
+import {
+  LocalStorageManager,
+  Designer,
+  Mindmap,
+  CustomRESTPersistenceManager,
+} from '@wisemapping/mindplot';
 import MapInfoImpl from './MapInfoImpl';
+
+const mapInfo = new MapInfoImpl('2', 'Develop Map Title', false);
+
+const options: EditorOptions = {
+  mode: 'edition-owner',
+  locale: 'fr',
+  enableKeyboardEvents: true,
+  hideAppBar: true,
+};
+
+// const persistence = new LocalStorageManager('samples/{id}.wxml', false, false);
+const persistence = new CustomRESTPersistenceManager({
+  documentUrl: '/quentin/api/file/{id}',
+});
 
 const initialization = (designer: Designer) => {
   designer.addEvent('loadSuccess', () => {
@@ -30,21 +49,36 @@ const initialization = (designer: Designer) => {
   });
 };
 
-const persistence = new LocalStorageManager('samples/{id}.wxml', false, false);
-const options: EditorOptions = {
-  mode: 'edition-owner',
-  locale: 'en',
-  enableKeyboardEvents: true,
+const handleUpdated = (mindmap: Mindmap) => {
+  const cleanItem = (item) => {
+    return {
+      children: item.getChildren().map((child) => cleanItem(child)),
+      features: item.getFeatures().map((feature) => {
+        return { type: feature.getType(), attributes: feature.getAttributes().id };
+      }),
+      props: item.getProperties(),
+    };
+  };
+  console.log(
+    'UPDATED',
+    mindmap.getBranches().map((branche) => cleanItem(branche)),
+    mindmap.getRelationships(),
+  );
+};
+
+const handleAction = () => {
+  // nothing to do
 };
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
 root.render(
   <Editor
-    mapInfo={new MapInfoImpl('welcome', 'Develop Map Title', false)}
+    mapInfo={mapInfo}
     options={options}
     persistenceManager={persistence}
-    onAction={(action) => console.log('action called:', action)}
     onLoad={initialization}
-  />
+    onChange={handleUpdated}
+    onAction={handleAction}
+  />,
 );

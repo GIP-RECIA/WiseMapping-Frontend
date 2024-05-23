@@ -15,9 +15,9 @@
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-import { $assert, $defined } from '@wisemapping/core-js';
+import { $assert, $defined } from '@gip-recia/wisemapping-core-js';
 
-import { Text, Group, ElementClass, ElementPeer, Rect } from '@wisemapping/web2d';
+import { Text, Group, ElementClass, ElementPeer, Rect } from '@gip-recia/wisemapping-web2d';
 
 import NodeGraph, { NodeOption } from './NodeGraph';
 import TopicFeatureFactory from './TopicFeature';

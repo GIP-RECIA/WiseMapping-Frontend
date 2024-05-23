@@ -16,7 +16,7 @@
  *   limitations under the License.
  */
 // eslint-disable-next-line max-classes-per-file
-import { Ellipse, StraightLine } from '@wisemapping/web2d';
+import { Ellipse, StraightLine } from '@gip-recia/wisemapping-web2d';
 import Shape from './util/Shape';
 import ActionDispatcher from './ActionDispatcher';
 import Canvas from './Canvas';

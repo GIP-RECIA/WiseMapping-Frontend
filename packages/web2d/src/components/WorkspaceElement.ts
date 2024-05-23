@@ -16,7 +16,7 @@
  *   limitations under the License.
  */
 
-import { $defined } from '@wisemapping/core-js';
+import { $defined } from '@gip-recia/wisemapping-core-js';
 import ElementPeer from './peer/svg/ElementPeer';
 import StyleAttributes from './StyleAttributes';
 

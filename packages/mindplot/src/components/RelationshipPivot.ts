@@ -15,7 +15,7 @@
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-import { CurvedLine, Arrow } from '@wisemapping/web2d';
+import { CurvedLine, Arrow } from '@gip-recia/wisemapping-web2d';
 import Relationship from './Relationship';
 import Shape from './util/Shape';
 import Canvas from './Canvas';

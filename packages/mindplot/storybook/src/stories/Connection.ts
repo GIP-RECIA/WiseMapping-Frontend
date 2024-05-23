@@ -12,7 +12,7 @@ import EventBusDispatcher from '../../../src/components/layout/EventBusDispatche
 import LayoutManager from '../../../src/components/layout/LayoutManager';
 import ChangeEvent from '../../../src/components/layout/ChangeEvent';
 import LayoutEventBus from '../../../src/components/layout/LayoutEventBus';
-import { $assert } from '@wisemapping/core-js';
+import { $assert } from '@gip-recia/wisemapping-core-js';
 
 const registerRefreshHook = (topics: Topic[]) => {
   // Trigger a redraw after the node is added ...

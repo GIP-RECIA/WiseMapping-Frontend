@@ -15,7 +15,7 @@
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-import { Text, Group } from '@wisemapping/web2d';
+import { Text, Group } from '@gip-recia/wisemapping-web2d';
 
 import Icon from './Icon';
 import IconGroup from './IconGroup';

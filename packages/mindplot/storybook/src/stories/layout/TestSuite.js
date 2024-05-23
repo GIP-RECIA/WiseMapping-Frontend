@@ -17,7 +17,7 @@
  *   limitations under the License.
  */
 import $ from 'jquery';
-import { $assert } from '@wisemapping/core-js';
+import { $assert } from '@gip-recia/wisemapping-core-js';
 import LayoutManager from '../../../../src/components/layout/LayoutManager';
 import ChildrenSorterStrategy from '../../../../src/components/layout/ChildrenSorterStrategy';
 

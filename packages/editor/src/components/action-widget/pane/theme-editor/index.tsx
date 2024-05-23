@@ -22,7 +22,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import { SelectChangeEvent } from '@mui/material/Select';
 import React, { ReactElement, useState } from 'react';
 import NodeProperty from '../../../../classes/model/node-property';
-import ThemeType from '@wisemapping/mindplot/src/components/model/ThemeType';
+import ThemeType from '@gip-recia/wisemapping-mindplot/src/components/model/ThemeType';
 
 const ThemeEditor = (props: {
   closeModal: () => void;

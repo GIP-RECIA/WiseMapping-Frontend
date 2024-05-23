@@ -15,7 +15,7 @@
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-import { Arrow, Line } from '@wisemapping/web2d';
+import { Arrow, Line } from '@gip-recia/wisemapping-web2d';
 import ConnectionLine, { LineType } from './ConnectionLine';
 import RelationshipControlPoints from './RelationshipControlPoints';
 import RelationshipModel from './model/RelationshipModel';

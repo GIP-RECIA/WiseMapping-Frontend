@@ -17,7 +17,7 @@
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-import { $assert } from '@wisemapping/core-js';
+import { $assert } from '@gip-recia/wisemapping-core-js';
 import INodeModel, { NodeModelType as NodeType } from './INodeModel';
 import NodeModel from './NodeModel';
 import RelationshipModel from './RelationshipModel';

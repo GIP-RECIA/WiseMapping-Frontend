@@ -17,7 +17,7 @@
  */
 import $ from 'jquery';
 
-import { $assert, $defined } from '@wisemapping/core-js';
+import { $assert, $defined } from '@gip-recia/wisemapping-core-js';
 import Messages, { $msg } from './Messages';
 
 import EventDispispatcher from './EventDispatcher';

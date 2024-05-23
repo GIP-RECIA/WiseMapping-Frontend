@@ -16,7 +16,7 @@
  *   limitations under the License.
  */
 
-import { Group } from '@wisemapping/web2d';
+import { Group } from '@gip-recia/wisemapping-web2d';
 import { TopicShapeType } from '../model/INodeModel';
 import SizeType from '../SizeType';
 

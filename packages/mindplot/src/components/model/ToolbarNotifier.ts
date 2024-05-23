@@ -16,7 +16,7 @@
  *   limitations under the License.
  */
 
-import { $assert } from '@wisemapping/core-js';
+import { $assert } from '@gip-recia/wisemapping-core-js';
 import $ from 'jquery';
 
 class ToolbarNotifier {

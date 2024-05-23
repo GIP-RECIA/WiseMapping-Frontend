@@ -17,7 +17,7 @@
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-import { $assert, $defined } from '@wisemapping/core-js';
+import { $assert, $defined } from '@gip-recia/wisemapping-core-js';
 import PositionType from '../PositionType';
 import AbstractBasicSorter from './AbstractBasicSorter';
 import Node from './Node';

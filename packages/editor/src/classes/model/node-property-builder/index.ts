@@ -1,4 +1,4 @@
-import { Designer, Topic } from '@wisemapping/mindplot';
+import { Designer, Topic } from '@gip-recia/wisemapping-mindplot';
 import NodeProperty from '../node-property';
 import {
   SwitchValueDirection,
@@ -6,9 +6,9 @@ import {
   fontSizes,
   getNextValue,
 } from '../../../components/toolbar/ToolbarValueModelBuilder';
-import { LineType } from '@wisemapping/mindplot/src/components/ConnectionLine';
-import { TopicShapeType } from '@wisemapping/mindplot/src/components/model/INodeModel';
-import ThemeType from '@wisemapping/mindplot/src/components/model/ThemeType';
+import { LineType } from '@gip-recia/wisemapping-mindplot/src/components/ConnectionLine';
+import { TopicShapeType } from '@gip-recia/wisemapping-mindplot/src/components/model/INodeModel';
+import ThemeType from '@gip-recia/wisemapping-mindplot/src/components/model/ThemeType';
 
 class NodePropertyBuilder {
   designer: Designer;

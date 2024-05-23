@@ -1,4 +1,4 @@
-# WiseMapping Frond End 
+# WiseMapping Frond End
 
 WiseMapping Front End constitutes an integral component of the MindMap Open Source Project, which commenced its journey in 2010. However, until 2021, substantial architectural updates were sparse. In 2021, a pivotal initiative was undertaken to instigate significant transformations, aimed at revitalizing both the visual aesthetics and underlying technological framework of the project.
 
@@ -18,7 +18,7 @@ Make sure you have NodeJs installed (version compatible with `package.json` engi
 ```sh
 nvm use
 yarn install
-export NODE_OPTIONS=--openssl-legacy-provider 
+export NODE_OPTIONS=--openssl-legacy-provider
 ```
 
 Please refer to each package's Readme.md for anything specific to the package.
@@ -39,8 +39,8 @@ Each package might provide the following scripts. You can run these for all pack
 
 > start a devServer with some browsable examples
 
-`yarn playground --scope @wisemapping/web2d`
-`yarn playground --scope @wisemapping/mindplot`
+`yarn playground --scope @gip-recia/wisemapping-web2d`
+`yarn playground --scope @gip-recia/wisemapping-mindplot`
 
 ## test
 

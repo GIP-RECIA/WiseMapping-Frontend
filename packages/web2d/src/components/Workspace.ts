@@ -15,7 +15,7 @@
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-import { $defined } from '@wisemapping/core-js';
+import { $defined } from '@gip-recia/wisemapping-core-js';
 import WorkspaceElement from './WorkspaceElement';
 import WorkspacePeer from './peer/svg/WorkspacePeer';
 import PositionType from './PositionType';

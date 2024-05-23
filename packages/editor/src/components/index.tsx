@@ -19,7 +19,7 @@ import React, { ReactElement } from 'react';
 import { Vortex } from 'react-loader-spinner';
 
 import { IntlProvider } from 'react-intl';
-import { Designer } from '@wisemapping/mindplot';
+import { Designer } from '@gip-recia/wisemapping-mindplot';
 
 import I18nMsg from '../classes/i18n-msg';
 // eslint-disable-next-line no-restricted-imports

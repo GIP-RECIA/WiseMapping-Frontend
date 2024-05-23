@@ -1,7 +1,7 @@
 import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
 import FormControl from '@mui/material/FormControl';
-import { Importer, TextImporterFactory } from '@wisemapping/editor';
+import { Importer, TextImporterFactory } from '@gip-recia/wisemapping-editor';
 import React, { useContext } from 'react';
 
 import { FormattedMessage, useIntl } from 'react-intl';

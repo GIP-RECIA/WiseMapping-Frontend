@@ -1,6 +1,6 @@
 import '../css/viewmode.css';
 import React from 'react';
-import { LocalStorageManager, Designer } from '@wisemapping/mindplot';
+import { LocalStorageManager, Designer } from '@gip-recia/wisemapping-mindplot';
 import MapInfoImpl from './MapInfoImpl';
 import { createRoot } from 'react-dom/client';
 import Editor, { EditorOptions, useEditor } from '../../../../src';

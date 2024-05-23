@@ -1,6 +1,6 @@
 {
-  "name": "@wisemapping/mindplot",
-  "version": "6.0.0",
+  "name": "@gip-recia/wisemapping-mindplot",
+  "version": "6.0.0-recia-1.0.2405231",
   "description": "WiseMapping - Mindplot Canvas Library",
   "homepage": "https://www.wisemapping.com/opensource/",
   "repository": {
@@ -29,9 +29,9 @@
     "test:unit": "jest ./test/unit/export/*.ts ./test/unit/import/*.ts --verbose --silent --detectOpenHandles"
   },
   "dependencies": {
+    "@gip-recia/wisemapping-core-js": "workspace:*",
+    "@gip-recia/wisemapping-web2d": "workspace:*",
     "@types/jquery": "^3.5.29",
-    "@wisemapping/core-js": "workspace:*",
-    "@wisemapping/web2d": "workspace:*",
     "jquery": "3.7.1",
     "lodash": "^4.17.21",
     "xml-formatter": "^3.6.2"
@@ -56,6 +56,6 @@
     "mocha": "^10.4.0"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.com"
+    "access": "public"
   }
 }

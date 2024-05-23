@@ -15,7 +15,7 @@
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-import { WidgetBuilder, Topic } from '@wisemapping/mindplot';
+import { WidgetBuilder, Topic } from '@gip-recia/wisemapping-mindplot';
 import { linkContent, noteContent } from './react-component';
 import NodeProperty from '../model/node-property';
 

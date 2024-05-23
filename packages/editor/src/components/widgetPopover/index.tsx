@@ -22,8 +22,8 @@ import Typography from '@mui/material/Typography';
 import { FormattedMessage } from 'react-intl';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import { WidgetBuilder, WidgetEventType } from '@wisemapping/mindplot';
-import { Topic } from '@wisemapping/mindplot';
+import { WidgetBuilder, WidgetEventType } from '@gip-recia/wisemapping-mindplot';
+import { Topic } from '@gip-recia/wisemapping-mindplot';
 
 type WidgetPopoverProps = {
   widgetManager: WidgetBuilder;

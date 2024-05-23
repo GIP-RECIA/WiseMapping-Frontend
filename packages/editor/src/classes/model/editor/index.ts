@@ -22,7 +22,7 @@ import {
   DesignerModel,
   WidgetBuilder,
   Topic,
-} from '@wisemapping/mindplot';
+} from '@gip-recia/wisemapping-mindplot';
 import Capability from '../../action/capability';
 
 class Editor {

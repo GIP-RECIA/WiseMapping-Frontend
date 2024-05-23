@@ -7,7 +7,7 @@ React Component for the wisemapping editor.
 This is a work in progress and for now mindplot needs to be instantiated using the initCallback prop. Check `test/playground/map-render` for some usage examples.
 
 ```ts
-import Editor from `@wisemapping/editor`;
+import Editor from `@gip-recia/wisemapping-editor`;
 
 ReactDOM.render(
     <Editor

@@ -1,6 +1,7 @@
 {
-    "name": "@wisemapping/webapp",
+    "name": "@gip-recia/wisemapping-webapp",
     "version": "6.0.1",
+    "private": true,
     "homepage": "https://www.wisemapping.com/opensource/",
     "repository": {
         "type": "git",
@@ -28,10 +29,11 @@
     "dependencies": {
         "@emotion/react": "^11.11.4",
         "@emotion/styled": "^11.11.5",
+        "@gip-recia/wisemapping-editor": "workspace:^",
         "@mui/icons-material": "^5.15.18",
         "@mui/lab": "^5.0.0-alpha.170",
         "@mui/material": "^5.15.18",
-        "@wisemapping/editor": "workspace:^",
+        "@reduxjs/toolkit": "^2.2.1",
         "axios": "^1.7.0",
         "dayjs": "^1.11.10",
         "react": "^18.2.0",
@@ -54,6 +56,6 @@
         "cypress-image-snapshot": "^4.0.1"
     },
     "publishConfig": {
-        "registry": "https://registry.npmjs.com"
+        "access": "public"
     }
 }

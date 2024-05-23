@@ -18,7 +18,7 @@
 
 import { json } from 'react-router-dom';
 import { ErrorInfo, MapMetadata } from '../../classes/client';
-import { EditorRenderMode } from '@wisemapping/editor';
+import { EditorRenderMode } from '@gip-recia/wisemapping-editor';
 import AppConfig from '../../classes/app-config';
 
 export type EditorMetadata = {

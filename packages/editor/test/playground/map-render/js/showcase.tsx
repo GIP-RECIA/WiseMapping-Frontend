@@ -18,7 +18,7 @@
 import React from 'react';
 import Editor, { EditorOptions, useEditor } from '../../../../src/index';
 import { createRoot } from 'react-dom/client';
-import { LocalStorageManager, Designer } from '@wisemapping/mindplot';
+import { LocalStorageManager, Designer } from '@gip-recia/wisemapping-mindplot';
 import MapInfoImpl from './MapInfoImpl';
 
 const initialization = (designer: Designer) => {

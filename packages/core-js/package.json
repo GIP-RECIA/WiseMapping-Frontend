@@ -1,6 +1,6 @@
 {
-    "name": "@wisemapping/core-js",
-    "version": "6.0.0",
+    "name": "@gip-recia/wisemapping-core-js",
+    "version": "6.0.0-recia-0.0.0",
     "description": "WiseMapping - Core Common Libraries",
     "author": "Paulo Veiga <pveiga@wisemapping.com>",
     "homepage": "https://www.wisemapping.com/opensource/",
@@ -18,6 +18,6 @@
         "dev": "webpack --mode development --config webpack.dev.js"
     },
     "publishConfig": {
-        "registry": "https://registry.npmjs.com"
+        "access": "public"
     }
 }

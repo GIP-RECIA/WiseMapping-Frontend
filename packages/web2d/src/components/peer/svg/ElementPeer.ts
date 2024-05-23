@@ -17,7 +17,7 @@
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-import { $assert, $defined } from '@wisemapping/core-js';
+import { $assert, $defined } from '@gip-recia/wisemapping-core-js';
 import SizeType from '../../SizeType';
 import EventUtils from '../utils/EventUtils';
 

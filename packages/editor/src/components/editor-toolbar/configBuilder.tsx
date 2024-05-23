@@ -53,7 +53,7 @@ import IconPicker from '../action-widget/pane/icon-picker';
 import FontFamilySelector from '../action-widget/button/font-family-selector';
 import Editor from '../../classes/model/editor';
 import { IntlShape } from 'react-intl';
-import { LineType } from '@wisemapping/mindplot/src/components/ConnectionLine';
+import { LineType } from '@gip-recia/wisemapping-mindplot/src/components/ConnectionLine';
 import ThemeEditor from '../action-widget/pane/theme-editor';
 
 const keyTooltip = (msg: string, key: string): string => {

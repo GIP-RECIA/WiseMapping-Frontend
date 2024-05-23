@@ -15,7 +15,7 @@
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-import { $defined, $assert } from '@wisemapping/core-js';
+import { $defined, $assert } from '@gip-recia/wisemapping-core-js';
 import ActionDispatcher from './ActionDispatcher';
 import DesignerActionRunner from './DesignerActionRunner';
 import AddTopicCommand from './commands/AddTopicCommand';

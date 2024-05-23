@@ -44,7 +44,7 @@ To use the web component in your JSX code, first you need to register it in the 
 #### TypeScript example
 
 ```ts
-import { MindplotWebComponentInterface } from '@wisemapping/mindplot';
+import { MindplotWebComponentInterface } from '@gip-recia/wisemapping-mindplot';
 
 declare global {
   namespace JSX {

@@ -16,7 +16,7 @@ import {
   Exporter,
   Mindmap,
   SizeType,
-} from '@wisemapping/editor';
+} from '@gip-recia/wisemapping-editor';
 import { fetchMindmap } from '../../../editor-page/PersistenceManagerUtils';
 
 import Checkbox from '@mui/material/Checkbox';

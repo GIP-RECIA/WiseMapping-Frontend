@@ -16,8 +16,8 @@
  *   limitations under the License.
  */
 
-import { $assert } from '@wisemapping/core-js';
-import { CurvedLine, Line, PolyLine } from '@wisemapping/web2d';
+import { $assert } from '@gip-recia/wisemapping-core-js';
+import { CurvedLine, Line, PolyLine } from '@gip-recia/wisemapping-web2d';
 import PositionType from './PositionType';
 import Topic from './Topic';
 import TopicConfig from './TopicConfig';

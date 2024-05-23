@@ -20,12 +20,12 @@ import {
   EditorRenderMode,
   PersistenceManager,
   WidgetBuilder,
-} from '@wisemapping/mindplot';
+} from '@gip-recia/wisemapping-mindplot';
 import { useState, useRef, useEffect } from 'react';
 import Capability from '../../classes/action/capability';
 import MapInfo from '../../classes/model/map-info';
 import Model from '../../classes/model/editor';
-import { logCriticalError } from '@wisemapping/core-js';
+import { logCriticalError } from '@gip-recia/wisemapping-core-js';
 import DefaultWidgetBuilder from '../../classes/default-widget-manager';
 
 export type EditorOptions = {

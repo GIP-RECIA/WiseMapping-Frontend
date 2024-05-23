@@ -23,7 +23,7 @@ import ReactGA from 'react-ga4';
 import { ErrorBody } from './styled';
 import { useRouteError } from 'react-router-dom';
 import { ErrorInfo } from '../../classes/client';
-import { logCriticalError } from '@wisemapping/core-js';
+import { logCriticalError } from '@gip-recia/wisemapping-core-js';
 
 export type ErrorPageType = {
   isSecurity: boolean;

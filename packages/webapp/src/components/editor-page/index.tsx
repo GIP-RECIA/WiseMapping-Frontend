@@ -16,8 +16,7 @@
  *   limitations under the License.
  */
 import React, { useContext, useEffect, useState } from 'react';
-import Editor, { useEditor, EditorOptions } from '@wisemapping/editor';
-
+import Editor, { useEditor, EditorOptions } from '@gip-recia/wisemapping-editor';
 import {
   EditorRenderMode,
   PersistenceManager,
@@ -25,13 +24,13 @@ import {
   LocalStorageManager,
   MockPersistenceManager,
   PersistenceError,
-} from '@wisemapping/editor';
+} from '@gip-recia/wisemapping-editor';
 import { IntlProvider } from 'react-intl';
 import AppI18n, { Locales } from '../../classes/app-i18n';
 import ReactGA from 'react-ga4';
 import { useTheme } from '@mui/material/styles';
 import MapInfoImpl from '../../classes/editor-map-info';
-import { MapInfo } from '@wisemapping/editor';
+import { MapInfo } from '@gip-recia/wisemapping-editor';
 import AppConfig from '../../classes/app-config';
 import exampleMap from '../../classes/client/mock-client/example-map.wxml';
 import JwtTokenConfig from '../../classes/jwt-token-config';
@@ -41,7 +40,7 @@ import { useFetchAccount } from '../../classes/middleware';
 import { ClientContext } from '../../classes/provider/client-context';
 import { KeyboardContext } from '../../classes/provider/keyboard-context';
 import SessionExpiredDialog from '../common-page/session-expired-dialog';
-import { EditorConfiguration } from '@wisemapping/editor/src/hooks/useEditor';
+import { EditorConfiguration } from '@gip-recia/wisemapping-editor/src/hooks/useEditor';
 
 const buildPersistenceManagerForEditor = (
   mode: EditorRenderMode,

@@ -15,8 +15,8 @@
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-import { $assert } from '@wisemapping/core-js';
-import { Image } from '@wisemapping/web2d';
+import { $assert } from '@gip-recia/wisemapping-core-js';
+import { Image } from '@gip-recia/wisemapping-web2d';
 
 import ImageIcon from './ImageIcon';
 import ActionDispatcher from './ActionDispatcher';

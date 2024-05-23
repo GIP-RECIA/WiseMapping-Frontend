@@ -1,5 +1,5 @@
-import { $assert } from '@wisemapping/core-js';
-import { Group, Rect, StraightLine } from '@wisemapping/web2d';
+import { $assert } from '@gip-recia/wisemapping-core-js';
+import { Group, Rect, StraightLine } from '@gip-recia/wisemapping-web2d';
 import ImageIcon from './ImageIcon';
 
 class IconGroupRemoveTip {

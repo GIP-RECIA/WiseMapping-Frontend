@@ -16,7 +16,7 @@
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-import { Ellipse, Group } from '@wisemapping/web2d';
+import { Ellipse, Group } from '@gip-recia/wisemapping-web2d';
 
 import TopicConfig from './TopicConfig';
 import ActionDispatcher from './ActionDispatcher';

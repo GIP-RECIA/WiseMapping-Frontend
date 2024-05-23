@@ -15,7 +15,7 @@
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-import { ElementClass, ElementPeer, Group } from '@wisemapping/web2d';
+import { ElementClass, ElementPeer, Group } from '@gip-recia/wisemapping-web2d';
 import { TopicShapeType } from '../model/INodeModel';
 import SizeType from '../SizeType';
 import TopicShape from './TopicShape';

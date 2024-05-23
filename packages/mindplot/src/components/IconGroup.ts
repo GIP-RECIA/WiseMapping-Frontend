@@ -16,8 +16,8 @@
  *   limitations under the License.
  */
 
-import { $assert } from '@wisemapping/core-js';
-import { Group } from '@wisemapping/web2d';
+import { $assert } from '@gip-recia/wisemapping-core-js';
+import { Group } from '@gip-recia/wisemapping-web2d';
 import IconGroupRemoveTip from './IconGroupRemoveTip';
 import ImageIcon from './ImageIcon';
 import SizeType from './SizeType';

@@ -16,7 +16,7 @@
  *   limitations under the License.
  */
 import $ from 'jquery';
-import { $assert } from '@wisemapping/core-js';
+import { $assert } from '@gip-recia/wisemapping-core-js';
 import Keyboard from './Keyboard';
 import { Designer } from '..';
 import Topic from './Topic';

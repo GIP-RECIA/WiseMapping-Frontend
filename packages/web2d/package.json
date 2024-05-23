@@ -1,6 +1,6 @@
 {
-  "name": "@wisemapping/web2d",
-  "version": "6.0.0",
+  "name": "@gip-recia/wisemapping-web2d",
+  "version": "6.0.0-recia-0.0.0",
   "description": "WiseMapping - Web2D Render Library",
   "homepage": "https://www.wisemapping.com/opensource/",
   "repository": {
@@ -39,10 +39,10 @@
     "cypress-image-snapshot": "^4.0.1"
   },
   "peerDependencies": {
-    "@wisemapping/core-js": "workspace:*",
+    "@gip-recia/wisemapping-core-js": "workspace:*",
     "jquery": "^3.6.0"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.com"
+    "access": "public"
   }
 }

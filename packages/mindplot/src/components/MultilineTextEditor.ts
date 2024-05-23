@@ -16,7 +16,7 @@
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
  */
-import { FontStyle } from '@wisemapping/web2d/src/components/peer/svg/FontPeer';
+import { FontStyle } from '@gip-recia/wisemapping-web2d/src/components/peer/svg/FontPeer';
 import $ from 'jquery';
 
 import ActionDispatcher from './ActionDispatcher';

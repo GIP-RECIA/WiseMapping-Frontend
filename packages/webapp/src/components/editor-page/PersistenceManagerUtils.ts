@@ -16,7 +16,7 @@
  *   limitations under the License.
  */
 import AppConfig from '../../classes/app-config';
-import { LocalStorageManager, Mindmap, XMLSerializerFactory } from '@wisemapping/editor';
+import { LocalStorageManager, Mindmap, XMLSerializerFactory } from '@gip-recia/wisemapping-editor';
 import JwtTokenConfig from '../../classes/jwt-token-config';
 
 export const fetchMindmap = async (mapId: number): Promise<Mindmap> => {
